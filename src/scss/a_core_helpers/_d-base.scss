@@ -1,0 +1,72 @@
+// The Base:, basically a simple dry/reset file. Comment-out, delete and or compare
+// This file with the vendor resets.
+// -----------------------------------------------------------------------------
+:root {box-sizing: border-box;}
+
+body,
+html {
+  background: $body-html-color;
+  color: $text-color;
+  font-family: $text-font-stack;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+// Lazy Ass Reset:--------------------------------------------------------------
+// Un-comment margin and padding if you want no vendor browsers margins and or padding:
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  // margin: 0;
+  // padding: 0;
+}
+
+// -----------------------------------------------------------------------------
+//----------------------------- Dry-Up-CSS-Reset-------------------------------
+.h1-header,
+.logo-icon,
+.hamburger-icon {
+  display: block;
+}
+
+button,
+.btn-xray {
+  display: inline-block;
+}
+
+// .foo {
+//   display: inline;
+// }
+
+.ul-nav {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+// CSS Fade Animation:
+li,
+.btn-xray,
+button {
+  transition-duration: .4s;
+ }
+
+// Highlighters:
+mark,
+code,
+.current {
+  background-color: $cement;
+  color: $black;
+  padding: $size-4;
+  }
+
+//Global border-radius:
+.current,
+.ul-nav :hover {
+  border-radius: $size-4;
+   }

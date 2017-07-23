@@ -1,0 +1,28 @@
+// Typography:
+
+a {
+  color: $a-color;
+  text-decoration: none;
+ }
+
+h1,
+h2,
+h3 {
+  color: $h-color;
+  font-family: $unique-font;
+  font-weight: 700;
+}
+
+.h1-header {
+  @extend %float-left;
+  margin: $size-30;
+
+  &:hover {
+    @extend %transition-fade;
+  }
+}
+
+.titles {
+  @extend %txt-align-center;
+  color: $titles-color;
+ }

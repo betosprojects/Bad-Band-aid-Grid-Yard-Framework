@@ -1,0 +1,25 @@
+// Header Section:
+
+.header-section {grid-area: headerTem;}
+
+.hamburger-icon {
+  @extend %float-right;
+  @extend %cursor-pointer;
+  margin: $size-40;
+
+  &:hover {
+    @extend %transition-fade;
+    // background: $black;
+    // padding: $size-14;
+  }
+}
+
+// Logo with transition fade:
+.logo-icon {
+  @extend %float-left;
+  margin-left: $size-30;
+
+  &:hover {
+    @extend %transition-fade;
+  }
+}

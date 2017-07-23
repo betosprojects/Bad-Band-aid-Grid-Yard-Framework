@@ -1,0 +1,47 @@
+//CSS Grid-Containers
+//----------------------------
+
+%grid-init {
+  display: grid;
+  grid-gap: $size-2;
+  grid-template: repeat(1, auto) / repeat(1, auto);
+}
+
+// ---- All Template areas Header|Nav|Hero|Sidebars|Main|Footer: ---------------
+//Example: used in index.html and yard.html
+.template-all {
+  @extend %grid-init;
+  grid-template-areas:
+  'headerTem'
+  'navTem'
+  'heroTem'
+  'sidebar1Tem'
+  'mainTem'
+  'sidebar2Tem'
+  'footerTem';
+}
+
+// ----------- Basic Template areas Header|Nav|Hero|Main|Footer: ---------------
+//Just like the template-all but without the sidebars
+// Example: Used in blog.html & about.html
+.template-basic {
+  @extend %grid-init;
+  grid-template-areas:
+  'headerTem'
+  'navTem'
+  'heroTem'
+  'mainTem'
+  'footerTem';
+}
+
+// ------------ Minimum Template areas Header|Nav|Main|Footer: -----------------
+// Just like the template-basic but without the sidebars and hero sections
+// Example: Used in contact.html
+.template-minimum {
+  @extend %grid-init;
+  grid-template-areas:
+  'headerTem'
+  'navTem'
+  'mainTem'
+  'footerTem';
+}

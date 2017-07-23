@@ -1,0 +1,21 @@
+// Generic Containers:
+
+%basic-container {
+  background-color: $container-color;
+  padding: $size-10;
+  width: 100%;
+ }
+
+.container-generic {
+  @extend %basic-container;
+  }
+
+// display: grid | inline-grid | subgrid;
+// align-items: start | end | center | stretch;
+.container-display {
+  @extend %basic-container;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: $size-10;
+  grid-template-columns: repeat(1, 1fr);
+}

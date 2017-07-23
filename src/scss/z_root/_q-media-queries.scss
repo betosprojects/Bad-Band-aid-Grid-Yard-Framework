@@ -1,0 +1,177 @@
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES -=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=
+// TODO: I don't know if I should merge the Header and Nav with the CSS Grid ones
+// Queries are smallest to largest (I hope =)):
+
+// ---------------- Header/Media Queries:
+// 25rem = 400px
+@media (max-width: 25rem) {
+  .logo-icon,
+  .hamburger-icon,
+  .h1-header {
+    float: none;
+    margin: $size-30 auto;
+    text-align: center;
+  }
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// ---------------- Nav/Media Queries:
+//  30rem = 480px.
+@media (max-width: 30rem) {
+  .nav-section {
+    // for hamburger-icon toggle:
+    height: 0;
+    overflow: hidden;
+    transition: height .4s;
+
+    .ul-nav {
+      margin: auto;
+      padding: 0;
+      width: 70%;
+    }
+  }
+
+  .open {
+    height: auto;
+    }
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// ---------------- Nav/Media Queries:
+// 30rem = 480px
+@media (min-width: 30rem) {
+  .nav-section {
+    .ul-nav {
+      flex-direction: row;
+      //justify-content: flex-start | flex-end | center | space-between | space-around;
+      justify-content: center;
+    }
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  // ---------------- Container Display/Media Queries:
+  .container-display {
+    grid-gap: $size-60;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    max-width: calc(#{$size-500} + #{$size-400});
+}
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// ---------------- Nav/Media Queries:
+// 50rem = 800px
+@media (min-width: 50rem) {
+  .nav-section {
+    .ul-nav {
+      justify-content: flex-end;
+      // Uncomment the li if you want it for the list to expand, but comment out
+      // the justify-content: flex-end;
+
+      li {
+        //flex: 1 0 auto;
+      }
+    }
+  }
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=- CSS GRID-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-= BREAK-POINT SET 1-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+//Scurred to use Variables on media queries...
+
+// -------------- Template ==All==  min-width: 30rem: --------------------------
+// 30rem =  480px:
+// Grid Template uses short hand:
+@media (min-width: 30rem) {
+  .template-all {
+    grid-template: repeat(6, auto) / repeat(2, auto);
+    grid-template-areas:
+    'headerTem headerTem'
+    'navTem navTem'
+    'heroTem heroTem'
+    'mainTem mainTem'
+    'sidebar1Tem sidebar2Tem'
+    'footerTem footerTem';
+  }
+
+  // ---------------- Template ==Basic==  min-width: 30rem: ----------------------
+
+  .template-basic {
+    grid-template: repeat(5, auto) / repeat(2, auto);
+    grid-template-areas:
+    'headerTem headerTem'
+    'navTem navTem'
+    'heroTem heroTem'
+    'mainTem mainTem'
+    'footerTem footerTem';
+  }
+
+  // ----------- Template ==Minimum==  min-width: 30rem: -------------------------
+
+  .template-minimum {
+    grid-template: repeat(4, auto) / repeat(2, auto);
+    grid-template-areas:
+    'headerTem headerTem'
+    'navTem navTem'
+    'mainTem mainTem'
+    'footerTem footerTem';
+  }
+}
+
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-= BREAK-POINT SET 2-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//------------------------------------------------------------------------------
+// -------------- Template ==All==  min-width: 64rem: --------------------------
+// 64rem =  1024px:
+@media (min-width: 64rem) {
+  // Map names to each grid cell
+  .template-all {
+    grid-template-areas:
+    'headerTem headerTem headerTem'
+    'navTem navTem navTem'
+    'heroTem heroTem heroTem'
+    'sidebar1Tem mainTem sidebar2Tem'
+    'footerTem footerTem footerTem';
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    margin: auto;
+    max-width: $max-width;
+  }
+
+  // -------------- Template ==Basic==  min-width: 64rem: ---------------------
+
+  .template-basic {
+    grid-template-areas:
+    'headerTem headerTem headerTem'
+    'navTem navTem navTem'
+    'heroTem heroTem heroTem'
+    'mainTem mainTem mainTem'
+    'footerTem footerTem footerTem';
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    margin: auto;
+    max-width: $max-width;
+}
+  // -------------- Template ==Minimum==  min-width: 64rem: --------------------
+
+  .template-minimum {
+    grid-template-areas:
+    'headerTem headerTem headerTem'
+    'navTem navTem navTem'
+    'mainTem mainTem mainTem'
+    'footerTem footerTem footerTem';
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin: auto;
+    max-width: $max-width;
+    }
+  }
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= END -=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=

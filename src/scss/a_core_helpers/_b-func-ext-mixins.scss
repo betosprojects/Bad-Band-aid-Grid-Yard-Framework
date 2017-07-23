@@ -1,0 +1,25 @@
+// Functions, extenders and mixins:
+//-=-=-=-=--=-=-=-=-=-=--=-=- BASIC Extend Helpers -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Example property:
+// @extend %float-left;
+
+%txt-align-center {
+  text-align: center;
+}
+
+%float-left {
+  float: left;
+}
+
+%float-right {
+  float: right;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}
+
+%transition-fade {
+  opacity: .5;
+  transition: .5s;
+}

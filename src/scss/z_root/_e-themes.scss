@@ -1,0 +1,16 @@
+// ----------------------- Default Theme -------------------------------------
+
+// START @Main Content Containers/Sections -------------------------------------
+// Use the .theme1, .theme2 to mix and match colors, the .global-theme for
+// site wide but, it's up to you
+.global-theme {
+  background-color: $global-theme-color;
+}
+
+.theme1 {
+  background-color: $theme1-color;
+ }
+
+.theme2 {
+  background-color: $theme2-color;
+ }

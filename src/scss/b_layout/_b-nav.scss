@@ -1,0 +1,22 @@
+// Navigation Section:
+
+.nav-section {grid-area: navTem;}
+
+.ul-nav {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    margin: $size-4;
+
+    &:hover {
+      background-color: $moss;
+    }
+  }
+
+  a {
+    display: block;
+    padding: $size-8 $size-20;
+    text-align: center;
+  }
+}
