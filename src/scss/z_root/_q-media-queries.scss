@@ -54,11 +54,11 @@
 
   // ---------------- Container Display/Media Queries:
   .container-display {
-    grid-gap: $size-60;
+    grid-gap: $size-20;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    max-width: calc(#{$size-500} + #{$size-400});
-}
+    width: calc(#{$size-500} + #{$size-300});
+  }
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
