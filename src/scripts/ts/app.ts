@@ -19,9 +19,23 @@ declare var $:any;
 // }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// I used jQuery for the "hamburger" icon to toggle. Paste this on the regular app.js file
+// if not using TypScript to compile. Having the framework clean as possible for future use
+// or having to use another way or method, that's why I didn't include this as
+// a default toggle or any other library, animations, scripts etc..
 $(document).ready(function(){
-    $(".hamburger-icon").click(function(){
-        $(".open").slideToggle();
-    });
+
+  //--------------------------- Hamburger-Icon Toggle ---------------------------
+  $('.hamburger-icon').on('click', function() {
+
+  if ($('.nav-section').hasClass('open')) {
+  $('.nav-section').removeClass('open');
+  } else {
+  $('.nav-section').addClass('open');
+  }
+  });
+
+
+// END of document.ready
 });
 

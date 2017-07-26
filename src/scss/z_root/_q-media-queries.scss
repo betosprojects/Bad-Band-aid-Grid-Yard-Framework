@@ -31,8 +31,10 @@
     }
   }
 
+  // Hamburger icon and ul-nav toggle (I used jQuery); Tweak this class .open to a specific
+  // height to toggle the nav menu's height:
   .open {
-    height: auto;
+    height: 14rem;
     }
 }
 
