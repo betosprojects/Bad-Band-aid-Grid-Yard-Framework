@@ -26,6 +26,7 @@ declare var $:any;
 $(document).ready(function(){
 
   //--------------------------- Hamburger-Icon Toggle ---------------------------
+
   $('.hamburger-icon').on('click', function() {
 
   if ($('.nav-section').hasClass('open')) {
@@ -35,7 +36,10 @@ $(document).ready(function(){
   }
   });
 
+  $('.hamburger-icon').click(function(){
+      $('.ul-nav').slideToggle();
+  });
+
 
 // END of document.ready
 });
-
