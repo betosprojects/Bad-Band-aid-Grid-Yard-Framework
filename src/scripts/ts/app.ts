@@ -20,7 +20,8 @@ declare var $:any;
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $(document).ready(function(){
-    $(".hamburger").click(function(){
+    $(".hamburger-icon").click(function(){
         $(".open").slideToggle();
     });
 });
+
