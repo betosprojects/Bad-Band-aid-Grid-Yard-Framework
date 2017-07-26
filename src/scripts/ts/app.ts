@@ -36,10 +36,6 @@ $(document).ready(function(){
   }
   });
 
-  $('.hamburger-icon').click(function(){
-      $('.ul-nav').slideToggle();
-  });
-
 
 // END of document.ready
 });
