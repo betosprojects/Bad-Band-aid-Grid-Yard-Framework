@@ -7,12 +7,12 @@ var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   notify = require('gulp-notify'),
   rename = require("gulp-rename"),
-  ts = require('gulp-typescript'),
+  ts = require('gulp-typescript'), // Optional
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
   uncss = require('gulp-uncss'),
   uglify = require('gulp-uglify'),
-  webp = require('gulp-webp'); //Optional
+  webp = require('gulp-webp'); // Optional
 
 
 //Simple Gulpfile for now, not perfect or near good but it works for me! ;)
