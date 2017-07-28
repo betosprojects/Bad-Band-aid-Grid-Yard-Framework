@@ -112,6 +112,9 @@ $RECYCLE.BIN/
 
 ######################
 # Personal Work-Flow
+
+.eslintrc.json
+
 *.txt
 Notes.md
 notes.md
