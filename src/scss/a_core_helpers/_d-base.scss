@@ -13,13 +13,13 @@ html {
 }
 
 // Lazy Ass Reset:--------------------------------------------------------------
-// Un-comment margin and padding if you want no vendor browsers margins and or padding:
+// Might want to comment margin and padding if using vendor reset.
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  // margin: 0;
-  // padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 // -----------------------------------------------------------------------------
