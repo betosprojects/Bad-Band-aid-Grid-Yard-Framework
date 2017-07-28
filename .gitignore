@@ -114,6 +114,7 @@ $RECYCLE.BIN/
 # Personal Work-Flow
 
 .eslintrc.json
+yarn.lock
 
 *.txt
 Notes.md
