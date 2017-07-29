@@ -41,7 +41,7 @@ declare var $:any;
 
 // Menu icon toggle and crickets `-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
 
 var menuIcon = document.querySelector('.hamburger-icon');
 var navSection = document.querySelector('.nav-section');

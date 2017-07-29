@@ -113,6 +113,7 @@ $RECYCLE.BIN/
 ######################
 # Personal Work-Flow
 
+dist/
 .eslintrc.json
 yarn.lock
 
