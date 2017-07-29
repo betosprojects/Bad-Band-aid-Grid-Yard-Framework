@@ -18,41 +18,36 @@ declare var $:any;
 //   (selector: string): any;
 // }
 
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Currently Experimenting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Currently Experimenting =-=-=-=-=-=-=-=-=-=-=-
 // I used jQuery for the "hamburger" icon to toggle. Paste this on the regular app.js file
 // if not using TypScript to compile. Having the framework clean as possible for future use
 // or having to use another way or method, that's why I didn't include libraries (yet)..:
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
 // --------------------------- Hamburger-Icon Toggle ---------------------------
 
-  // $('.hamburger-icon').on('click', function() {
-  // if ($('.nav-section').hasClass('open')) {
-  // $('.nav-section').removeClass('open');
-  // } else {
-  // $('.nav-section').addClass('open');
-  // }
-  // });
-
-// });
-
-// END of document.ready
-
-// Menu icon toggle and crickets `-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`
-
-document.addEventListener("DOMContentLoaded", function(event) {
-
-var menuIcon = document.querySelector('.hamburger-icon');
-var navSection = document.querySelector('.nav-section');
-
-menuIcon.addEventListener('click', function() {
-  if (navSection.classList.contains('open')) {
-    navSection.classList.remove('open');
+  $('.hamburger-icon').on('click', function() {
+  if ($('.nav-section').hasClass('open')) {
+  $('.nav-section').removeClass('open');
   } else {
-    navSection.classList.add('open');
+  $('.nav-section').addClass('open');
   }
-}, false);
+  });
+
+
+
+});
+//END of document.ready
+
+
+
+
+// -=-=-=-=-=-=-=-=-=-=-=-=- Regular JavaScript =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+document.addEventListener('DOMContentLoaded', function(event) {
+
+// JS goes here
 
 });
 // END of document.ready
