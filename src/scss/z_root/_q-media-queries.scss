@@ -1,6 +1,5 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES -=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=
-// TODO: I don't know if I should merge the Header and Nav with the CSS Grid ones
-// Queries are smallest to largest (I hope =)):
+// TODO: Figure out a way to organize this better
 
 // ---------------- Header/Media Queries:
 // 25rem = 400px
@@ -20,9 +19,11 @@
 @media (max-width: 30rem) {
   .nav-section {
     // for hamburger-icon toggle:
-    height: 0;
+    // Hamburger icon and ul-nav toggle; Tweak this height to a specific
+    // size to toggle the nav menu's height:
+    height: 14rem;
     overflow: hidden;
-    transition: height .4s;
+    transition: height .5s;
 
     .ul-nav {
       margin: auto;
@@ -31,11 +32,10 @@
     }
   }
 
-  // Hamburger icon and ul-nav toggle (I used jQuery); Tweak this class .open to a specific
-  // height to toggle the nav menu's height:
-  .open {
-    height: 13.5rem;
-    }
+  // Close the Menu
+  .close {
+    height: 0;
+  }
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

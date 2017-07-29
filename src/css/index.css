@@ -170,14 +170,16 @@ h3 {
 
 @media (max-width: 30rem) {
   .nav-section {
-    height: 0;
+    height: 14rem;
     overflow: hidden;
-    -webkit-transition: height .4s;
-    transition: height .4s; }
+    -webkit-transition: height .5s;
+    transition: height .5s; }
     .nav-section .ul-nav {
       margin: auto;
       padding: 0;
-      width: 70%; } }
+      width: 70%; }
+  .close {
+    height: 0; } }
 
 @media (min-width: 30rem) {
   .nav-section .ul-nav {
