@@ -28,10 +28,10 @@
     const targetSelector = document.querySelector('.nav-section')!;
     eventClick.addEventListener('click', function (e: Event) {
 
-      if (targetSelector.classList.contains('close')) {
-        targetSelector.classList.remove('close');
+      if (targetSelector.classList.contains('toggle')) {
+        targetSelector.classList.remove('toggle');
       } else {
-        targetSelector.classList.add('close');
+        targetSelector.classList.add('toggle');
       }
     }, false);
 

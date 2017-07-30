@@ -1,16 +1,16 @@
 // Nav Menu Toggle:
 // Documen Content Loader (document.ready):
 
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function () {
 
     var eventClick = document.querySelector('.hamburger-icon');
     var targetSelector = document.querySelector('.nav-section');
     eventClick.addEventListener('click', function () {
-        if (targetSelector.classList.contains('close')) {
-            targetSelector.classList.remove('close');
+        if (targetSelector.classList.contains('toggle')) {
+            targetSelector.classList.remove('toggle');
         }
         else {
-            targetSelector.classList.add('close');
+            targetSelector.classList.add('toggle');
         }
     }, false);
 

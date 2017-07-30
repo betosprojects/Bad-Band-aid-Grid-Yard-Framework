@@ -178,7 +178,7 @@ h3 {
       margin: auto;
       padding: 0;
       width: 70%; }
-  .close {
+  .toggle {
     height: 0; } }
 
 @media (min-width: 30rem) {
