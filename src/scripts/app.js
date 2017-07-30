@@ -1,18 +1,18 @@
 // Nav Menu Toggle:
 // Documen Content Loader (document.ready):
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener('DOMContentLoaded', function (event) {
 
-  var menuIcon = document.querySelector('.hamburger-icon');
-  var navSection = document.querySelector('.nav-section');
-  menuIcon.addEventListener('click', function () {
-
-    if (navSection.classList.contains('close')) {
-      navSection.classList.remove('close');
-    } else {
-      navSection.classList.add('close');
-    }
-  }, false);
+    var eventClick = document.querySelector('.hamburger-icon');
+    var targetSelector = document.querySelector('.nav-section');
+    eventClick.addEventListener('click', function () {
+        if (targetSelector.classList.contains('close')) {
+            targetSelector.classList.remove('close');
+        }
+        else {
+            targetSelector.classList.add('close');
+        }
+    }, false);
 
 });
 // END of document.ready

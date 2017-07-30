@@ -70,6 +70,7 @@ $size-200: 12.5rem; // 200px
 $size-300: 18.75rem; // 300px
 $size-400: 25rem; // 400px
 $size-500: 31.25rem; // 500px
+$size-1000: 62.5rem; // 1000px
 
 //Calc Samples:
 // calc(#{$size-100} + #{$size-18});
@@ -78,4 +79,4 @@ $size-500: 31.25rem; // 500px
 
 // Site wide maximum width:
 // 73.75rem is same or more or less as 1180px, 960px is 60rem, 83.375rem = 1366px
-$max-width: 83.375rem !default;
+$max-width: 100vw !default;
