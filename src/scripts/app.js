@@ -1,5 +1,5 @@
 // Nav Menu Toggle:
-// Documen Content Loader (document.ready):
+// Documen Content Loader (document ready):
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -15,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }, false);
 
 });
-// END of document.ready
+// END of document ready

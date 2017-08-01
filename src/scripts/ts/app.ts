@@ -6,10 +6,10 @@
 // $(document).ready(function(){
 
 //   $('.hamburger-icon').on('click', function() {
-//   if ($('.nav-section').hasClass('close')) {
-//   $('.nav-section').removeClass('close');
+//   if ($('.nav-section').hasClass('toggle')) {
+//   $('.nav-section').removeClass('toggle');
 //   } else {
-//   $('.nav-section').addClass('close');
+//   $('.nav-section').addClass('toggle');
 //   }
 //   });
 
