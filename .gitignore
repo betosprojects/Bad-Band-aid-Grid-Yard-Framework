@@ -1,6 +1,4 @@
 
-# Created by https://www.gitignore.io/api/kate,node,linux
-
 ### Kate ###
 # Swap Files #
 .*.kate-swp
@@ -112,7 +110,8 @@ $RECYCLE.BIN/
 
 ######################
 # Personal Work-Flow
-
+gulpfile.js
+package.json
 dist/
 .eslintrc.json
 yarn.lock
@@ -131,4 +130,3 @@ notes.md
 
 #####################
 
-# End of https://www.gitignore.io/api/kate,node,linux, windows
