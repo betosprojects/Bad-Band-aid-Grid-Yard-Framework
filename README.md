@@ -12,3 +12,6 @@ My attempt on creating CSS Grid Layout framework.  [CSS Grid Layout](https://dev
 - Documentation maybe? -
 
 ***
+Free for personal and commercial use and no attribution required but you can buy me some coffee if you like. :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KNEYLQQ2NNEE)
