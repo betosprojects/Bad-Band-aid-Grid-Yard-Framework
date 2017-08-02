@@ -12,6 +12,3 @@ My attempt on creating CSS Grid Layout framework.  [CSS Grid Layout](https://dev
 - Documentation maybe? -
 
 ***
-SCSS (Sass) boilerplates archtectures similar and inspired by Hugo Giraudel's [Sass Boilerplate](https://github.com/HugoGiraudel/sass-boilerplate) and Matthew Hartman's [Base](http://getbase.org/) framework. Thank you.
-
-***
