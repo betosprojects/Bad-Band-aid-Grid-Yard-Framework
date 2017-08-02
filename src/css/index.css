@@ -123,12 +123,9 @@ h3 {
   grid-area: footerTem; }
 
 .container-generic {
-  background-color: #1e1f24;
-  padding: 0.625rem;
-  width: 100%; }
+  max-width: 100%; }
 
 .container-display {
-  background-color: #1e1f24;
   grid-template-columns: repeat(1, 1fr); }
 
 .icon-center {
