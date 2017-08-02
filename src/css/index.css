@@ -122,14 +122,13 @@ h3 {
 .footer-section {
   grid-area: footerTem; }
 
-.container-generic, .container-display {
+.container-generic {
+  background-color: #1e1f24;
   padding: 0.625rem;
   width: 100%; }
 
 .container-display {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-gap: 0.625rem;
+  background-color: #1e1f24;
   grid-template-columns: repeat(1, 1fr); }
 
 .icon-center {
@@ -193,10 +192,10 @@ h3 {
   .hamburger-icon {
     display: none; }
   .container-display {
-    grid-gap: 1.25rem;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-    width: calc(31.25rem + 18.75rem); } }
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 50rem) {
   .nav-section .ul-nav {

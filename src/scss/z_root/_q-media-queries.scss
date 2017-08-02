@@ -1,5 +1,5 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES -=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=
-// TODO: Figure out a way to organize this better
+// No variables on media queries-----
 
 // ---------------- Header/Media Queries:
 // 25rem = 400px
@@ -18,7 +18,6 @@
 //  30rem = 480px.
 @media (max-width: 30rem) {
   .nav-section {
-    // for hamburger-icon toggle:
     // Hamburger icon and ul-nav toggle; Tweak this height to a specific
     // size to toggle the nav menu's height:
     height: 14rem;
@@ -55,11 +54,13 @@
   }
 
   // ---------------- Container Display/Media Queries:
+  // display: grid | inline-grid | subgrid;
+  // align-items: start | end | center | stretch;
   .container-display {
-    grid-gap: $size-20;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-    width: calc(#{$size-500} + #{$size-300});
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: $size-16;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -81,11 +82,7 @@
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=- CSS GRID-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-= BREAK-POINT SET 1-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-//Scurred to use Variables on media queries...
-
 // -------------- Template ==All==  min-width: 30rem: --------------------------
 // 30rem =  480px:
 // Grid Template uses short hand:
@@ -125,7 +122,6 @@
   }
 }
 
-//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-= BREAK-POINT SET 2-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //------------------------------------------------------------------------------
 // -------------- Template ==All==  min-width: 64rem: --------------------------
