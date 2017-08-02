@@ -2,32 +2,31 @@
 // ------------------------------- @COLORES ------------- ----------------------
 // Basic:
 $black: rgba(0, 0, 0, 1);
-$blue: rgba(0, 0, 255, 1);
 $grey: rgba(153, 153, 153, 1);
 $orange: rgba(255, 165, 0, 1);
-$pink: rgba(255, 192, 203, 1);
 $purple: rgba(128, 0, 128, 1);
 $red: rgba(255, 0, 0, 1);
 $white: rgba(255, 255, 255, 1);
 
 // Named:
+$bandaid: rgba(43, 24, 48, 1);
 $cement: rgba(84, 91, 113, 1);
 $cement-dark: rgba(39, 43, 53, 1);
 $fog: rgba(221, 234, 242, 1);
 $grisaille: rgba(144, 164, 174, 1);
 $midnight: rgba(30, 31, 36, 1);
 $mist: rgba(176, 196, 223, 1);
-$moss: rgba(47, 78, 80, 1);
+
 
 // Container's Colors:
 $body-html-color: $cement;
 $container-color: $midnight;
 $global-theme-color: $cement-dark;
 $theme1-color: $cement-dark;
-$theme2-color: $moss;
+$theme2-color: $bandaid;
 
 // ------------------------------- @FONTS --------------  ----------------------
-// Google Fonts or branding fonts:
+
 $unique-font: 'FOO', cursive;
 
 // Regular font family  @type List

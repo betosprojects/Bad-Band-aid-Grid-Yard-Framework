@@ -9,15 +9,13 @@
 
   &:hover {
     @extend %transition-fade;
-    // background: $black;
-    // padding: $size-14;
   }
 }
 
 // Logo with transition fade:
 .logo-icon {
   @extend %float-left;
-  margin-left: $size-30;
+  margin: $size-4;
 
   &:hover {
     @extend %transition-fade;

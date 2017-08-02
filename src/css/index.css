@@ -85,7 +85,7 @@ h3 {
   margin: 2.5rem; }
 
 .logo-icon {
-  margin-left: 1.875rem; }
+  margin: 0.25rem; }
 
 .nav-section {
   grid-area: navTem; }
@@ -101,7 +101,7 @@ h3 {
   .ul-nav li {
     margin: 0.25rem; }
     .ul-nav li:hover {
-      background-color: #2f4e50; }
+      background-color: #545b71; }
   .ul-nav a {
     display: block;
     padding: 0.5rem 1.25rem;
@@ -154,14 +154,14 @@ h3 {
   background-color: #272b35; }
 
 .theme2 {
-  background-color: #2f4e50; }
+  background-color: #2b1830; }
 
 @media (max-width: 25rem) {
   .logo-icon,
   .hamburger-icon,
   .h1-header {
     float: none;
-    margin: 1.875rem auto;
+    margin: 1rem auto;
     text-align: center; } }
 
 @media (max-width: 30rem) {
