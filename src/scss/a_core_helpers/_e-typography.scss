@@ -25,4 +25,5 @@ h3 {
 .titles {
   @extend %txt-align-center;
   color: $titles-color;
+  margin: $size-20 0;
  }

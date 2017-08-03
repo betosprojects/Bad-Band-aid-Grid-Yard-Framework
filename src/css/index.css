@@ -1,6 +1,9 @@
 .titles, .text-align-center {
   text-align: center; }
 
+.container-generic, .container-display {
+  padding: 1.25rem; }
+
 .h1-header, .logo-icon {
   float: left; }
 
@@ -76,7 +79,8 @@ h3 {
   margin: 1.875rem; }
 
 .titles {
-  color: purple; }
+  color: #545b71;
+  margin: 1.25rem 0; }
 
 .header-section {
   grid-area: headerTem; }
@@ -122,6 +126,9 @@ h3 {
 .footer-section {
   grid-area: footerTem; }
 
+.container-generic, .container-display {
+  background-color: #1e1f24; }
+
 .container-generic {
   max-width: 100%; }
 
@@ -129,9 +136,9 @@ h3 {
   grid-template-columns: repeat(1, 1fr); }
 
 .icon-center {
-  height: 50px;
+  height: 33px;
   margin: auto;
-  width: 50px; }
+  width: 33px; }
 
 .template-all, .template-basic, .template-minimum {
   display: grid;
@@ -192,7 +199,7 @@ h3 {
     display: none; }
   .container-display {
     display: grid;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(6.25rem, auto);
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); } }
 

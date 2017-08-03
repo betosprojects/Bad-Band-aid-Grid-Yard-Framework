@@ -1,9 +1,17 @@
 // Generic Containers:
+
+%container-init {
+  @extend %global-padding;
+  background-color: $container-color;
+}
+
 .container-generic {
+  @extend %container-init;
   max-width: 100%;
 }
 
-// Basically for cards or showcase of images see yard and about content.
+// Basically for cards or showcase of images, see yard and about content.
 .container-display {
+  @extend %container-init;
   grid-template-columns: repeat(1, 1fr);
 }
