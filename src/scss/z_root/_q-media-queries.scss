@@ -137,7 +137,7 @@
     'footerTem footerTem footerTem';
 
     grid-template-columns: 1fr 4fr 1fr;
-    // If you want to define a certain width for each row, else comment this out:
+    // If you want to define a certain height for each row, else comment it out:
     grid-template-rows: auto auto auto auto auto;
   }
 
@@ -152,7 +152,7 @@
     'footerTem footerTem footerTem';
 
     grid-template-columns: 1fr 4fr 1fr;
-    // If you want to define a certain width for each row, else comment this out:
+    // If you want to define a certain height for each row, else comment it out:
     grid-template-rows: auto auto auto auto auto;
 }
   // -------------- Template ==Minimum==  min-width: 64rem: --------------------
@@ -165,7 +165,7 @@
     'footerTem footerTem footerTem';
 
     grid-template-columns: 1fr 4fr 1fr;
-    // If you want to define a certain width for each row, else comment this out:
+    // If you want to define a certain height for each row, else comment it out:
     grid-template-rows: auto auto auto auto;
     }
   }
