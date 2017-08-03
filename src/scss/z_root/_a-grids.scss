@@ -5,6 +5,8 @@
   display: grid;
   grid-gap: $size-2;
   grid-template: repeat(1, auto) / repeat(1, auto);
+  margin: auto;
+  max-width: $max-width;
 }
 
 // ---- All Template areas Header|Nav|Hero|Sidebars|Main|Footer: ---------------

@@ -136,7 +136,9 @@ h3 {
 .template-all, .template-basic, .template-minimum {
   display: grid;
   grid-gap: 0.125rem;
-  grid-template: repeat(1, auto)/repeat(1, auto); }
+  grid-template: repeat(1, auto)/repeat(1, auto);
+  margin: auto;
+  max-width: 83.375rem; }
 
 .template-all {
   grid-template-areas: 'headerTem' 'navTem' 'heroTem' 'sidebar1Tem' 'mainTem' 'sidebar2Tem' 'footerTem'; }
@@ -215,20 +217,14 @@ h3 {
   .template-all {
     grid-template-areas: 'headerTem headerTem headerTem' 'navTem navTem navTem' 'heroTem heroTem heroTem' 'sidebar1Tem mainTem sidebar2Tem' 'footerTem footerTem footerTem';
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    margin: auto;
-    max-width: 83.375rem; }
+    grid-template-rows: auto auto auto auto auto; }
   .template-basic {
     grid-template-areas: 'headerTem headerTem headerTem' 'navTem navTem navTem' 'heroTem heroTem heroTem' 'mainTem mainTem mainTem' 'footerTem footerTem footerTem';
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    margin: auto;
-    max-width: 83.375rem; }
+    grid-template-rows: auto auto auto auto auto; }
   .template-minimum {
     grid-template-areas: 'headerTem headerTem headerTem' 'navTem navTem navTem' 'mainTem mainTem mainTem' 'footerTem footerTem footerTem';
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    margin: auto;
-    max-width: 83.375rem; } }
+    grid-template-rows: auto auto auto auto; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -137,9 +137,8 @@
     'footerTem footerTem footerTem';
 
     grid-template-columns: 1fr 4fr 1fr;
+    // If you want to define a certain width for each row, else comment this out:
     grid-template-rows: auto auto auto auto auto;
-    margin: auto;
-    max-width: $max-width;
   }
 
   // -------------- Template ==Basic==  min-width: 64rem: ---------------------
@@ -153,9 +152,8 @@
     'footerTem footerTem footerTem';
 
     grid-template-columns: 1fr 4fr 1fr;
+    // If you want to define a certain width for each row, else comment this out:
     grid-template-rows: auto auto auto auto auto;
-    margin: auto;
-    max-width: $max-width;
 }
   // -------------- Template ==Minimum==  min-width: 64rem: --------------------
 
@@ -167,9 +165,8 @@
     'footerTem footerTem footerTem';
 
     grid-template-columns: 1fr 4fr 1fr;
+    // If you want to define a certain width for each row, else comment this out:
     grid-template-rows: auto auto auto auto;
-    margin: auto;
-    max-width: $max-width;
     }
   }
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= END -=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=
