@@ -1,6 +1,6 @@
 # Bad Bandaid CSS Grid Framework
 
-### This is an ongoing, responsive CSS Grid Layout framework project.
+### This is an ongoing, __BLEEDING EDGE__ responsive CSS Grid Layout framework project.
 ***
 My attempt on creating CSS Grid Layout framework.  [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) introduces a two-dimensional grid system to CSS. In addition, I gave it a bit of Flexbox to the nav links section as a reference of it as well.
 ***
