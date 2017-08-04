@@ -57,10 +57,9 @@
   // ---------------- Container Display/Media Queries:
   // display: grid | inline-grid | subgrid;
   .container-display {
-    display: grid;
-    grid-auto-rows: minmax($size-100, auto);
-    grid-gap: $size-16;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    max-width: 95%;
   }
 }
 

@@ -7,11 +7,13 @@
 
 .container-generic {
   @extend %container-init;
-  max-width: 100%;
 }
 
 // Basically for cards or showcase of images, see yard and about content.
 .container-display {
   @extend %container-init;
+  display: grid;
+  grid-auto-rows: minmax($size-100, auto);
+  grid-gap: $size-20;
   grid-template-columns: repeat(1, 1fr);
 }
