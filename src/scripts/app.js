@@ -1,6 +1,6 @@
 // Nav Menu Toggle:
-// Documen Content Loader (document ready):
 
+// DOM Content Loader:
 document.addEventListener('DOMContentLoaded', function () {
 
     var eventClick = document.querySelector('.hamburger-icon');
@@ -15,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }, false);
 
 });
-// END of document ready
+// END of DOM Content Loader
