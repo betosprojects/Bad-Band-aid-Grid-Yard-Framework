@@ -4,7 +4,7 @@
 %grid-init {
   display: grid;
   grid-gap: $size-2;
-  grid-template: repeat(1, auto) / repeat(1, auto);
+  grid-template-columns: repeat(1, 1fr);
   margin: auto;
   max-width: $max-width;
 }

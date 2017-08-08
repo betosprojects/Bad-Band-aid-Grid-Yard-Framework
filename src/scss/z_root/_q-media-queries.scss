@@ -15,7 +15,7 @@
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-// ---------------- Nav/Media Queries:
+// ---------------- Nav, Hero/Media Queries:
 //  30rem = 480px.
 @media (max-width: 30rem) {
   .nav-section {
@@ -35,6 +35,10 @@
   // Close the Menu
   .toggle {
     height: 0;
+  }
+
+  .hero-image {
+    background-attachment: scroll;
   }
 }
 

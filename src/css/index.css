@@ -2,7 +2,7 @@
   text-align: center; }
 
 .container-generic, .container-display {
-  padding: 1.25rem; }
+  padding: 0.625rem; }
 
 .h1-header, .logo-icon {
   float: left; }
@@ -114,6 +114,15 @@ h3 {
 .hero-section {
   grid-area: heroTem; }
 
+.hero-image {
+  background-attachment: fixed;
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 31.25rem;
+  position: relative; }
+
 .sidebar1-section {
   grid-area: sidebar1Tem; }
 
@@ -143,7 +152,7 @@ h3 {
 .template-all, .template-basic, .template-minimum {
   display: grid;
   grid-gap: 0.125rem;
-  grid-template: repeat(1, auto)/repeat(1, auto);
+  grid-template-columns: repeat(1, 1fr);
   margin: auto;
   max-width: 83.375rem; }
 
@@ -184,7 +193,9 @@ h3 {
       padding: 0;
       width: 70%; }
   .toggle {
-    height: 0; } }
+    height: 0; }
+  .hero-image {
+    background-attachment: scroll; } }
 
 @media (min-width: 30rem) {
   .nav-section .ul-nav {
