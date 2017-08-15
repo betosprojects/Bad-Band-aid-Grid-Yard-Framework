@@ -10,13 +10,16 @@
 .hamburger-icon {
   float: right; }
 
-.hamburger-icon {
+.hamburger-icon, .button:hover {
   cursor: pointer; }
 
-.h1-header:hover, .hamburger-icon:hover, .logo-icon:hover {
+.h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .button:hover {
   opacity: .5;
   -webkit-transition: .5s;
   transition: .5s; }
+
+.current, .ul-nav li, .button {
+  border-radius: 0.25rem; }
 
 :root {
   -webkit-box-sizing: border-box;
@@ -38,6 +41,7 @@ html {
   margin: 0;
   padding: 0; }
 
+.button,
 .h1-header,
 .logo-icon,
 .hamburger-icon {
@@ -51,18 +55,10 @@ img {
   border: 0;
   max-width: 100%; }
 
-li {
-  -webkit-transition-duration: .4s;
-  transition-duration: .4s; }
-
 .current {
   background-color: #545b71;
   color: black;
   padding: 0.25rem; }
-
-.current,
-.ul-nav :hover {
-  border-radius: 0.25rem; }
 
 a {
   color: white;
@@ -103,7 +99,9 @@ h3 {
   -ms-flex-direction: column;
   flex-direction: column; }
   .ul-nav li {
-    margin: 0.25rem; }
+    margin: 0.25rem;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s; }
     .ul-nav li:hover {
       background-color: #545b71; }
   .ul-nav a {
@@ -134,6 +132,12 @@ h3 {
 
 .footer-section {
   grid-area: footerTem; }
+
+.button {
+  background-color: #90a4ae;
+  border: none;
+  padding: 0.75rem;
+  margin: 1rem auto; }
 
 .container-generic, .container-display {
   background-color: #1e1f24; }

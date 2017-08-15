@@ -7,6 +7,8 @@
 
   li {
     margin: $size-4;
+     transition-duration: .4s;
+     @extend %global-border-radius;
 
     &:hover {
       background-color: $cement;

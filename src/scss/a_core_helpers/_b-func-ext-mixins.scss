@@ -27,3 +27,7 @@
   opacity: .5;
   transition: .5s;
 }
+
+%global-border-radius {
+  border-radius: $size-4;
+}

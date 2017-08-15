@@ -13,7 +13,7 @@ html {
 }
 
 // Lazy Ass Reset:--------------------------------------------------------------
-// Might want to comment margin and padding if using vendor reset.
+// Might want to comment out and or compare with vendor resets:
 *,
 *::before,
 *::after {
@@ -24,16 +24,16 @@ html {
 
 // -----------------------------------------------------------------------------
 //----------------------------- Dry-Up-CSS-Reset-------------------------------
+.button,
 .h1-header,
 .logo-icon,
 .hamburger-icon {
   display: block;
 }
 
-button,
-.btn-xray {
-  display: inline-block;
-}
+//  foo {
+//   display: inline-block;
+// }
 
 // .foo {
 //   display: inline;
@@ -49,13 +49,6 @@ img {
   max-width: 100%;
 }
 
-// CSS Fade Animation:
-li,
-.btn-xray,
-button {
-  transition-duration: .4s;
- }
-
 // Highlighters:
 mark,
 code,
@@ -65,8 +58,7 @@ code,
   padding: $size-4;
   }
 
-//Global border-radius:
-.current,
-.ul-nav :hover {
-  border-radius: $size-4;
+//Current border-radius:
+.current {
+  @extend %global-border-radius;
    }
