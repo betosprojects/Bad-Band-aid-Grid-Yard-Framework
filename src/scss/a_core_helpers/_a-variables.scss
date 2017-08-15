@@ -9,7 +9,6 @@ $red: rgba(255, 0, 0, 1);
 $white: rgba(255, 255, 255, 1);
 
 // Named:
-$bandaid: rgba(43, 24, 48, 1);
 $cement: rgba(84, 91, 113, 1);
 $cement-dark: rgba(39, 43, 53, 1);
 $fog: rgba(221, 234, 242, 1);
@@ -22,7 +21,7 @@ $body-html-color: $cement;
 $container-color: $midnight;
 $global-theme-color: $cement-dark;
 $theme1-color: $cement-dark;
-$theme2-color: $bandaid;
+$theme2-color: $midnight;
 
 // ------------------------------- @FONTS --------------  ----------------------
 
@@ -34,8 +33,8 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 //Typography Colors:
-$a-color: $white;
-$h-color: $grisaille;
+$a-color: $fog;
+$h-color: $mist;
 $li-color: $orange;
 $p-color: $white;
 $text-color: $mist;

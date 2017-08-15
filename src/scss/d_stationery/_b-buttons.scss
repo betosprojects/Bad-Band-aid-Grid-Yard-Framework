@@ -3,6 +3,7 @@
 .button {
   @extend %global-border-radius;
   background-color: $grisaille;
+  color: $black;
   border: 0;
   margin: $size-16 auto;
   padding: $size-8;

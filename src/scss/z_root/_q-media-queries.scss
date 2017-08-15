@@ -63,7 +63,8 @@
   .container-display {
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    max-width: 95%;
+    // Define a specific size:
+    // max-width: 95%;
   }
 }
 
