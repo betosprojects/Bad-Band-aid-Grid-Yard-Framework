@@ -1,4 +1,4 @@
-.titles, .text-align-center {
+.titles, .text-align-center, .ul-nav a, .landing-page {
   text-align: center; }
 
 .container-generic, .container-display {
@@ -13,7 +13,7 @@
 .hamburger-icon, .button:hover {
   cursor: pointer; }
 
-.h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .button:hover {
+.h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .landing-page .h1-landing:hover, .button:hover {
   opacity: .5;
   -webkit-transition: .5s;
   transition: .5s; }
@@ -106,18 +106,19 @@ h3 {
       background-color: #545b71; }
   .ul-nav a {
     display: block;
-    padding: 0.5rem 1.25rem;
-    text-align: center; }
+    padding: 0.5rem 1.25rem; }
 
 .hero-section {
   grid-area: heroTem; }
 
-.hero-image {
+.hero-image, .landing-page {
   background-attachment: fixed;
-  background-image: url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; }
+
+.hero-image {
+  background-image: url("../images/hero.jpg");
   min-height: 31.25rem; }
 
 .sidebar1-section {
@@ -131,6 +132,29 @@ h3 {
 
 .footer-section {
   grid-area: footerTem; }
+
+.landing-page {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("../images/bg-hero.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 1.25rem; }
+  .landing-page h1,
+  .landing-page p {
+    margin-bottom: 1.875rem; }
+  .landing-page .h1-landing {
+    font-size: 2.5rem; }
 
 .button {
   background-color: #90a4ae;

@@ -1,14 +1,18 @@
 // Hero Section, It could also be used for sliders, ads, showcases etc..
 .hero-section {grid-area: heroTem;}
 
-// Main Hero image:
-.hero-image {
+%hero-image-init {
   // To set it to normal set the background-attachment to scroll (media queries):
   background-attachment: fixed;
-  background-image: url('../images/hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: $size-500;
   // opacity: .7;
+}
+
+// Main Hero image:
+.hero-image {
+  @extend %hero-image-init;
+  background-image: url('../images/hero.jpg');
+  min-height: $size-500;
 }

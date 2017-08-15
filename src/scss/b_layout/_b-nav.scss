@@ -16,8 +16,8 @@
   }
 
   a {
+    @extend %txt-align-center;
     display: block;
     padding: $size-8 $size-20;
-    text-align: center;
   }
 }
