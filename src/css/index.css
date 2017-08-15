@@ -2,7 +2,7 @@
   text-align: center; }
 
 .container-generic, .container-display {
-  padding: 0.625rem; }
+  padding: 1rem; }
 
 .h1-header, .logo-icon {
   float: left; }
@@ -135,15 +135,15 @@ h3 {
 
 .button {
   background-color: #90a4ae;
-  border: none;
-  padding: 0.75rem;
-  margin: 1rem auto; }
+  border: 0;
+  margin: 1rem auto;
+  padding: 0.5rem; }
 
 .container-generic, .container-display {
-  background-color: #1e1f24; }
+  background-color: #1e1f24;
+  display: grid; }
 
 .container-display {
-  display: grid;
   grid-auto-rows: minmax(6.25rem, auto);
   grid-gap: 1.25rem;
   grid-template-columns: repeat(1, 1fr); }
