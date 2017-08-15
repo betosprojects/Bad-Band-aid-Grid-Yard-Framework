@@ -118,8 +118,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 31.25rem;
-  position: relative; }
+  min-height: 31.25rem; }
 
 .sidebar1-section {
   grid-area: sidebar1Tem; }
