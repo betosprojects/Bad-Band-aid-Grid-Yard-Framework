@@ -1,5 +1,5 @@
 // Generic Containers:
-
+// display: grid | inline-grid | subgrid;
 %container-init {
   @extend %global-padding;
   background-color: $container-color; //Color can be for visual feedback
@@ -16,4 +16,6 @@
   grid-auto-rows: minmax($size-100, auto);
   grid-gap: $size-40;
   grid-template-columns: repeat(1, 1fr);
+  margin: auto;
+  max-width: 95%;
 }

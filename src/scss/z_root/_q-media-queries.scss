@@ -58,13 +58,9 @@
     display: none;
   }
 
-  // ---------------- Container Display/Media Queries:
-  // display: grid | inline-grid | subgrid;
+  // ---------------- Container Display/Media Query:
   .container-display {
     grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-    // Define a specific size:
-    // max-width: 95%;
   }
 }
 
