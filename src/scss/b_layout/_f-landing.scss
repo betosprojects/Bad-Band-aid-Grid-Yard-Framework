@@ -1,4 +1,6 @@
 // Centering header text for a full screen landing HTML page:
+.open-section {grid-area: openTem;}
+
 .landing-page {
   @extend %hero-image-init;
   @extend %txt-align-center;
@@ -6,7 +8,7 @@
   background-image: url('../images/bg-hero.png');
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // Height is defined in the grids.scss template rows
   justify-content: center;
   padding: 0 $size-20;
 

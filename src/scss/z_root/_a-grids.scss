@@ -6,7 +6,6 @@
   grid-gap: $size-2;
   grid-template-columns: repeat(1, 1fr);
   margin: auto;
-  max-width: $max-width;
 }
 
 // ---- All Template areas Header|Nav|Hero|Sidebars|Main|Footer: ---------------
@@ -21,10 +20,13 @@
   'mainTem'
   'sidebar2Tem'
   'footerTem';
+  //It's safe to comment template rows if all are set to auto:
+  grid-template-rows: auto auto auto auto auto;
+  max-width: $max-width;
 }
 
 // ----------- Basic Template areas Header|Nav|Hero|Main|Footer: ---------------
-//Just like the template-all but without the sidebars
+// No sidebars
 // Example: Used in blog.html & about.html
 .template-basic {
   @extend %grid-init;
@@ -34,10 +36,14 @@
   'heroTem'
   'mainTem'
   'footerTem';
+  //It's safe to comment template rows if all are set to auto:
+  grid-template-rows: auto auto auto auto auto;
+
+  max-width: $max-width;
 }
 
 // ------------ Minimum Template areas Header|Nav|Main|Footer: -----------------
-// Just like the template-basic but without the sidebars and hero sections
+// No sidebars and hero sections
 // Example: Used in contact.html
 .template-minimum {
   @extend %grid-init;
@@ -46,4 +52,23 @@
   'navTem'
   'mainTem'
   'footerTem';
+  //It's safe to comment template rows if all are set to auto:
+  grid-template-rows: auto auto auto auto;
+
+  max-width: $max-width;
+}
+
+// ------------ Single Template areas |Main|Footer: -----------------
+// Main and Footer sections only, To create headers from scratch or any other
+// section using the the "openTem" (openTemplate) grid template erea.
+// Also notice that it hass a max-width $full-width (100%)
+// Example: Used in landing.html.
+.template-single {
+  @extend %grid-init;
+  grid-template-areas:
+  'openTem'
+  'mainTem'
+  'footerTem';
+  grid-template-rows: 100vh auto 10vh;
+  max-width: $full-width;
 }

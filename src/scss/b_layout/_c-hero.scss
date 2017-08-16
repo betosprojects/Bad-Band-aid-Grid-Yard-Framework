@@ -1,9 +1,9 @@
-// Hero Section, It could also be used for sliders, ads, showcases etc..
+// Hero Section, It could also be used for sliders, ads etc..
 .hero-section {grid-area: heroTem;}
 
-// landing.scss page is also using this extender:
+// landing.scss/html page is also using this extender:
 %hero-image-init {
-  // To set it to normal set the background-attachment to scroll (media queries):
+  // background-attachment is set to scroll in media-queries (fixed doesn't work on mobil):
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
