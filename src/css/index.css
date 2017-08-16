@@ -119,7 +119,7 @@ h3 {
 
 .hero-image {
   background-image: url("../images/hero.jpg");
-  min-height: 31.25rem; }
+  min-height: 60vh; }
 
 .sidebar1-section {
   grid-area: sidebar1Tem; }

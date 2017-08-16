@@ -15,5 +15,5 @@
 .hero-image {
   @extend %hero-image-init;
   background-image: url('../images/hero.jpg');
-  min-height: $size-500;
+  min-height: 60vh;
 }
