@@ -13,15 +13,16 @@ $cement: rgba(84, 91, 113, 1);
 $cement-dark: rgba(39, 43, 53, 1);
 $fog: rgba(221, 234, 242, 1);
 $grisaille: rgba(144, 164, 174, 1);
-$midnight: rgba(30, 31, 36, 1);
+$charcoal: rgba(30, 31, 36, 1);
 $mist: rgba(176, 196, 223, 1);
+$midnight: rgba(15, 15, 15, 1);
 
 // Container's Colors:
 $body-html-color: $cement;
-$container-color: $midnight;
-$global-theme-color: $cement-dark;
-$theme1-color: $cement-dark;
-$theme2-color: $midnight;
+$container-color: $charcoal;
+$global-theme-color: $black;
+$theme1-color: $midnight;
+$theme2-color: $cement-dark;
 
 // ------------------------------- @FONTS --------------  ----------------------
 

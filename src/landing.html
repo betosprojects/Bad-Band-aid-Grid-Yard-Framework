@@ -19,22 +19,37 @@
 <body>
 
 
-  <!--Start @Grid template-single Contianer -->
-  <div class="template-single">
+<!--Start @Grid template-single Contianer -->
+<div class="template-single">
+
+<div class="open-section">
 
 <!--Start @header-section -->
-<header class="open-section landing-page">
-
-<a href="index.html"><h1 class="h1-landing">Bad Bandaid</h1></a>
+<header class="landing-page">
+<a href="index.html">
+<h1 class="h1-landing">Bad Bandaid</h1>
+</a>
 <p>Basic Flexbox full screen landing page.</p>
-<a href="yard.html"><button class="button">Read More</button></a>
-
+<a href="blog.html"><button class="button">Read More</button></a>
 </header>
-<!--End header-section -->
 
+<!--Start @nav-section-->
+<img src="images/icons/hamburger-icon.svg" class="hamburger-icon" alt="Menu Icon">
+<nav class="nav-section toggle">
+<ul class="ul-nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="yard.html">Yard</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<!--End nav-section -->
+
+</div>
 
 <!--Start @content-section-->
-<main class="main-section theme1">
+<main class="main-section">
 
 <!-- Container Display Grid 1: -->
 <section class="container-display">
@@ -42,9 +57,8 @@
 <div class="icon-center"><img src="images/icons/camera.svg" alt="icon"></div>
 <h2 class="titles">Article 1</h2>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos
-earum ullam minus tempore error quaerat reprehenderit dolor repudiandae, autem
-at distinctio eius consequuntur fuga sed est, mollitia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos earum ullam minus tempore error quaerat reprehenderit
+dolor repudiandae, autem at distinctio eius consequuntur fuga sed est, mollitia.
 </p>
 <a href="blog.html"><button class="button">Read More</button></a>
 </article>
@@ -53,9 +67,8 @@ at distinctio eius consequuntur fuga sed est, mollitia.
 <div class="icon-center"><img src="images/icons/avatar2.svg" alt="icon"></div>
 <h2 class="titles">Article 2</h2>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos
-earum ullam minus tempore error quaerat reprehenderit dolor repudiandae, autem
-at distinctio eius consequuntur fuga sed est, mollitia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos earum ullam minus tempore error quaerat reprehenderit
+dolor repudiandae, autem at distinctio eius consequuntur fuga sed est, mollitia.
 </p>
 <a href="blog.html"><button class="button">Read More</button></a>
 </article>
@@ -67,9 +80,8 @@ at distinctio eius consequuntur fuga sed est, mollitia.
 <div class="icon-center"><img src="images/icons/type-edit.svg" alt="icon"></div>
 <h2 class="titles">Article 3</h2>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos
-earum ullam minus tempore error quaerat reprehenderit dolor repudiandae, autem
-at distinctio eius consequuntur fuga sed est, mollitia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos earum ullam minus tempore error quaerat reprehenderit
+dolor repudiandae, autem at distinctio eius consequuntur fuga sed est, mollitia.
 </p>
 <a href="blog.html"><button class="button">Read More</button></a>
 </article>
@@ -78,9 +90,8 @@ at distinctio eius consequuntur fuga sed est, mollitia.
 <div class="icon-center"><img src="images/icons/gears.svg" alt="icon"></div>
 <h2 class="titles">Article 4</h2>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos
-earum ullam minus tempore error quaerat reprehenderit dolor repudiandae, autem
-at distinctio eius consequuntur fuga sed est, mollitia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos earum ullam minus tempore error quaerat reprehenderit
+dolor repudiandae, autem at distinctio eius consequuntur fuga sed est, mollitia.
 </p>
 <a href="blog.html"><button class="button">Read More</button></a>
 </article>
@@ -88,16 +99,16 @@ at distinctio eius consequuntur fuga sed est, mollitia.
 <!-- END of Containers Display Grids: -->
 
 </main>
-<!--End @content-section-->
 
 <!--Start @footer-section-->
-<footer class="footer-section theme1">
-Bad Bandaid Graphics&copy; | CSS Grid Layout Framework by Beto G. | 2017
+<footer class="footer-section">
+<p>Bad Bandaid Graphics&copy; | CSS Grid Layout Framework by Beto G. | 2017</p>
 </footer>
-<!--End footer-section-->
 
 </div>
 <!--End Grid template Container-->
 
+<script src="./scripts/app.js"></script>
 </body>
+
 </html>

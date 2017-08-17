@@ -1,5 +1,8 @@
 // Navigation Section:
-.nav-section {grid-area: navTem;}
+.nav-section {
+  background-color: $theme2-color;
+  grid-area: navTem;
+}
 
 .ul-nav {
   display: flex;

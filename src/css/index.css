@@ -79,6 +79,7 @@ h3 {
   margin: 1.25rem 0; }
 
 .header-section {
+  background-color: #0f0f0f;
   grid-area: headerTem; }
 
 .hamburger-icon {
@@ -88,6 +89,7 @@ h3 {
   margin: 0.25rem; }
 
 .nav-section {
+  background-color: #272b35;
   grid-area: navTem; }
 
 .ul-nav {
@@ -109,6 +111,7 @@ h3 {
     padding: 0.5rem 1.25rem; }
 
 .hero-section {
+  background-color: #0f0f0f;
   grid-area: heroTem; }
 
 .hero-image, .landing-page {
@@ -122,12 +125,15 @@ h3 {
   min-height: 60vh; }
 
 .sidebar1-section {
+  background-color: #272b35;
   grid-area: sidebar1Tem; }
 
 .sidebar2-section {
+  background-color: #272b35;
   grid-area: sidebar2Tem; }
 
 .main-section {
+  background-color: #272b35;
   grid-area: mainTem; }
 
 .open-section {
@@ -145,6 +151,7 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -156,6 +163,7 @@ h3 {
     font-size: 2.5rem; }
 
 .footer-section {
+  background-color: #0f0f0f;
   grid-area: footerTem; }
 
 .button {
@@ -183,7 +191,7 @@ h3 {
 
 .template-all, .template-basic, .template-minimum, .template-single {
   display: grid;
-  grid-gap: 0.125rem;
+  grid-gap: 0.0625rem;
   grid-template-columns: repeat(1, 1fr);
   margin: auto; }
 
@@ -204,25 +212,8 @@ h3 {
 
 .template-single {
   grid-template-areas: 'openTem' 'mainTem' 'footerTem';
-  grid-template-rows: 100vh auto 10vh;
+  grid-template-rows: auto auto 10vh;
   max-width: 100%; }
-
-.global-theme {
-  background-color: #272b35; }
-
-.theme1 {
-  background-color: #272b35; }
-
-.theme2 {
-  background-color: #1e1f24; }
-
-@media (max-width: 25rem) {
-  .logo-icon,
-  .hamburger-icon,
-  .h1-header {
-    float: none;
-    margin: 1rem auto;
-    text-align: center; } }
 
 @media (max-width: 30rem) {
   .nav-section {
@@ -234,9 +225,16 @@ h3 {
       margin: auto;
       padding: 0;
       width: 70%; }
+  .logo-icon,
+  .hamburger-icon,
+  .h1-header {
+    float: none;
+    margin: 1rem auto;
+    text-align: center; }
   .toggle {
     height: 0; }
-  .hero-image {
+  .hero-image,
+  .landing-page {
     background-attachment: scroll; } }
 
 @media (min-width: 30rem) {

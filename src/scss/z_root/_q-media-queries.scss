@@ -1,19 +1,6 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES -=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=
 // No variables on media queries-----
 // IMPORTANT: Rememeber that Nav-Section is Flexbox
-
-// ---------------- Header/Media Queries:
-// 25rem = 400px
-@media (max-width: 25rem) {
-  .logo-icon,
-  .hamburger-icon,
-  .h1-header {
-    float: none;
-    margin: $size-16 auto;
-    text-align: center;
-  }
-}
-
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // ---------------- Nav, Hero/Media Queries:
 //  30rem = 480px.
@@ -32,12 +19,22 @@
     }
   }
 
+  .logo-icon,
+  .hamburger-icon,
+  .h1-header {
+    float: none;
+    margin: $size-16 auto;
+    text-align: center;
+  }
+
   // Toggle for Hamburger/Menu:
   .toggle {
     height: 0;
   }
 
-  .hero-image {
+  // Hero images don't stay fixed (parallax effects) on mobil devices?
+  .hero-image,
+  .landing-page {
     background-attachment: scroll;
   }
 }

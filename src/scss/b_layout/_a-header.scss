@@ -1,5 +1,8 @@
 // Header Section:
-.header-section {grid-area: headerTem;}
+.header-section {
+  background-color: $theme1-color;
+  grid-area: headerTem;
+}
 
 .hamburger-icon {
   @extend %float-right;

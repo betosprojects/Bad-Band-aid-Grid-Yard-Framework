@@ -1,5 +1,8 @@
 // Hero Section, It could also be used for sliders, ads etc..
-.hero-section {grid-area: heroTem;}
+.hero-section {
+  background-color: $theme1-color;
+  grid-area: heroTem;
+}
 
 // landing.scss/html page is also using this extender:
 %hero-image-init {
