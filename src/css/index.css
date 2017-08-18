@@ -167,22 +167,19 @@ h3 {
   grid-area: footerTem; }
 
 .button {
-  background-color: #272b35;
+  background-color: black;
   color: #90a4ae;
   margin: 0.625rem auto;
   max-width: 100px;
   padding: 0.5rem; }
 
 .container-generic, .container-display {
-  background-color: #1e1f24;
   display: grid; }
 
 .container-display {
-  grid-auto-rows: minmax(6.25rem, auto);
-  grid-gap: 2.5rem;
-  grid-template-columns: repeat(1, 1fr);
-  margin: auto;
-  max-width: 95%; }
+  grid-auto-rows: auto;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(1, 1fr); }
 
 .icon-center {
   height: 33px;
@@ -247,15 +244,18 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center; }
   .hamburger-icon {
-    display: none; }
-  .container-display {
-    grid-template-columns: repeat(2, 1fr); } }
+    display: none; } }
 
 @media (min-width: 50rem) {
   .nav-section .ul-nav {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+  .container-display {
+    grid-column-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    max-width: 95%; } }
 
 @media (min-width: 64rem) {
   .template-all {

@@ -3,7 +3,7 @@
 .button {
   @extend %global-border-radius;
   @extend %txt-align-center;
-  background-color: $cement-dark;
+  background-color: $black;
   color: $grisaille;
   margin: $size-10 auto;
   max-width: 100px;

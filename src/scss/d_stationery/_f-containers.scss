@@ -2,7 +2,8 @@
 // display: grid | inline-grid | subgrid;
 %container-init {
   @extend %global-padding;
-  background-color: $container-color; //Color can be for visual feedback
+  //Color can be for visual feedback:
+  // background-color: $container-color;
   display: grid;
 }
 
@@ -10,12 +11,11 @@
   @extend %container-init;
 }
 
-// Basically for cards or showcase of images, see yard and about content.
+// Basically for cards or showcase of images etc., see yard and about content.
+// It auto flows to 3 boxes per row, see media queries to change it to any number.
 .container-display {
   @extend %container-init;
-  grid-auto-rows: minmax($size-100, auto);
-  grid-gap: $size-40;
+  grid-auto-rows: auto;
+  grid-row-gap: 40px;
   grid-template-columns: repeat(1, 1fr);
-  margin: auto;
-  max-width: 95%;
 }

@@ -54,11 +54,6 @@
   .hamburger-icon {
     display: none;
   }
-
-  // ---------------- Container Display/Media Query:
-  .container-display {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -76,6 +71,14 @@
       }
     }
   }
+
+  // ---------------- Container Display/Media Queries:
+  .container-display {
+    grid-column-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    max-width: 95%;
+    }
 }
 
 // -=-=-=-=--=-=-=-=- CSS GRID Layout-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=
