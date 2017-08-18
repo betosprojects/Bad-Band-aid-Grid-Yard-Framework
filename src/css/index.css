@@ -1,4 +1,4 @@
-.titles, .text-align-center, .ul-nav a, .landing-page {
+.titles, .text-align-center, .ul-nav a, .landing-page, .button {
   text-align: center; }
 
 .container-generic, .container-display {
@@ -10,7 +10,7 @@
 .hamburger-icon {
   float: right; }
 
-.hamburger-icon, .button:hover {
+.hamburger-icon {
   cursor: pointer; }
 
 .h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .landing-page .h1-landing:hover, .button:hover {
@@ -47,7 +47,7 @@ html {
 .hamburger-icon {
   display: block; }
 
-.ul-nav {
+ul {
   list-style-type: none;
   text-decoration: none; }
 
@@ -167,10 +167,10 @@ h3 {
   grid-area: footerTem; }
 
 .button {
-  background-color: #90a4ae;
-  color: black;
-  border: 0;
-  margin: 1rem auto;
+  background-color: #272b35;
+  color: #90a4ae;
+  margin: 0.625rem auto;
+  max-width: 100px;
   padding: 0.5rem; }
 
 .container-generic, .container-display {

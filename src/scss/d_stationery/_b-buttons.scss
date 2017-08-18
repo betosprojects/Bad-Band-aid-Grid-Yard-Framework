@@ -2,14 +2,14 @@
 
 .button {
   @extend %global-border-radius;
-  background-color: $grisaille;
-  color: $black;
-  border: 0;
-  margin: $size-16 auto;
+  @extend %txt-align-center;
+  background-color: $cement-dark;
+  color: $grisaille;
+  margin: $size-10 auto;
+  max-width: 100px;
   padding: $size-8;
 
   &:hover {
     @extend %transition-fade;
-    @extend %cursor-pointer;
       }
 }
