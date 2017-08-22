@@ -9,9 +9,9 @@
   flex-direction: column;
 
   li {
+    @extend %global-border-radius;
     margin: $size-4;
-     transition-duration: .4s;
-     @extend %global-border-radius;
+    transition-duration: .4s;
 
     &:hover {
       background-color: $cement;
@@ -19,8 +19,9 @@
   }
 
   a {
-    @extend %txt-align-center;
+    color: $a-color;
     display: block;
     padding: $size-8 $size-20;
+    text-align: center;
   }
 }

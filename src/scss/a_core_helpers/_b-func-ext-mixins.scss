@@ -1,27 +1,10 @@
 // Functions, Extenders and Mixins:
 //-=-=-=-=--=-=-=-=-=-=--=-=- BASIC Extend Helpers -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-// Mainly very useful extentenders to dry up CSS a bit
 // Example:
-// @extend %float-left;
-
-%txt-align-center {
-  text-align: center;
-}
+// @extend %global-padding;
 
 %global-padding {
   padding: $size-16;
-}
-
-%float-left {
-  float: left;
-}
-
-%float-right {
-  float: right;
-}
-
-%cursor-pointer {
-  cursor: pointer;
 }
 
 %transition-fade {

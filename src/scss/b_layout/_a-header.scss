@@ -5,8 +5,9 @@
 }
 
 .hamburger-icon {
-  @extend %float-right;
-  @extend %cursor-pointer;
+  cursor: pointer;
+  display: block;
+  float: right;
   margin: $size-40;
 
   &:hover {
@@ -16,8 +17,9 @@
 
 // Logo with transition fade:
 .logo-icon {
-  @extend %float-left;
-  margin: $size-4;
+  display: block;
+  float: left;
+  // margin: $size-4;
 
   &:hover {
     @extend %transition-fade;

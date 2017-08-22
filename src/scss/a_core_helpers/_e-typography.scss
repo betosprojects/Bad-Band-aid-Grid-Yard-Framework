@@ -1,20 +1,14 @@
 // Typography:
 
-a {
-  color: $a-color;
-  text-decoration: none;
- }
-
 h1,
 h2,
 h3 {
   color: $h-color;
-  font-family: $unique-font;
   font-weight: 700;
 }
 
 .h1-header {
-  @extend %float-left;
+  float: left;
   margin: $size-30;
 
   &:hover {
@@ -23,7 +17,7 @@ h3 {
 }
 
 .titles {
-  @extend %txt-align-center;
   color: $titles-color;
   margin: $size-20 0;
+  text-align: center;
  }
