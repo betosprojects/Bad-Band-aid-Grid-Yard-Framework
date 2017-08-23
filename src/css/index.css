@@ -16,7 +16,7 @@
 body,
 html {
   background: #545b71;
-  color: #b0c4df;
+  color: #ddeaf2;
   font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 100%;
   line-height: 1.15; }
@@ -171,6 +171,7 @@ h3 {
     color: #0f0f0f; }
 
 .container-generic, .container-display {
+  background-color: #1e1f24;
   display: grid; }
 
 .container-display {
