@@ -1,7 +1,8 @@
 // The Base:, basically a simple reset file. Comment-out, delete and or compare
 // This file with the vendor resets.
 // -----------------------------------------------------------------------------
-:root {box-sizing: border-box;}
+
+//:root {}
 
 body,
 html {
@@ -17,7 +18,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
