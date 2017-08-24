@@ -3,7 +3,7 @@
 %container-init {
   @extend %global-padding;
   //Color can be for visual feedback:
-  // background-color: $container-color;
+  background-color: $container-color;
   display: grid;
 }
 
