@@ -1,4 +1,4 @@
-# Bad Bandaid CSS Grid Framework
+# Bad Band-aid CSS Grid Framework
 
 ### This is an ongoing, __BLEEDING EDGE__ responsive CSS Grid Layout framework project.
 ***
