@@ -8,13 +8,13 @@
   .nav-section {
     // Hamburger icon and ul-nav toggle; Tweak this height to a specific
     // size to toggle the nav menu's height:
-    height: 14rem;
+    height: 16rem;
     overflow: hidden;
     transition: height .5s;
 
     .ul-nav {
       margin: auto;
-      padding: 0;
+      padding: $size-8;
       width: 70%;
     }
   }
