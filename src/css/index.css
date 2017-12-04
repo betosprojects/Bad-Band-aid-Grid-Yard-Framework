@@ -9,10 +9,6 @@
 .current, .ul-nav li, .button-global, .button-light {
   border-radius: 0.25rem; }
 
-:root {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
 body,
 html {
   background: #545b71;
@@ -24,8 +20,8 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -38,6 +34,8 @@ img {
   border: 0;
   max-width: 100%; }
 
+mark,
+code,
 .current {
   background-color: #545b71;
   color: black;
@@ -212,13 +210,13 @@ h3 {
 
 @media (max-width: 30rem) {
   .nav-section {
-    height: 14rem;
+    height: 16rem;
     overflow: hidden;
     -webkit-transition: height .5s;
     transition: height .5s; }
     .nav-section .ul-nav {
       margin: auto;
-      padding: 0;
+      padding: 0.5rem;
       width: 70%; }
   .logo-icon,
   .hamburger-icon,
