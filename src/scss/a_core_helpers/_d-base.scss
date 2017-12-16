@@ -1,10 +1,11 @@
 // The Base:, basically a simple reset file. Comment-out, delete and or compare
-// This file with the vendor resets.
+// This file with other vendor resets.
 // -----------------------------------------------------------------------------
 
 //:root {}
 
-body,
+//body {}
+
 html {
   background: $body-html-color;
   color: $text-color;
