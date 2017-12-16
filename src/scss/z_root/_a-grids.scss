@@ -1,4 +1,4 @@
-//CSS Grid Template-Containers
+// CSS Grid Template-Containers
 // display: grid | inline-grid | subgrid;
 
 %grid-init {
@@ -9,7 +9,7 @@
 }
 
 // ---- All Template areas Header|Nav|Hero|Sidebars|Main|Footer: ---------------
-//Example: used in index.html and yard.html
+// Example: used in index.html and yard.html
 .template-all {
   @extend %grid-init;
   grid-template-areas:
@@ -20,7 +20,7 @@
   'mainTem'
   'sidebar2Tem'
   'footerTem';
-  //It's safe to comment template rows if all are set to auto:
+  // Safe to comment out template rows if all are set to auto:
   grid-template-rows: auto auto auto auto auto;
   max-width: $max-width;
 }
@@ -36,7 +36,7 @@
   'heroTem'
   'mainTem'
   'footerTem';
-  //It's safe to comment template rows if all are set to auto:
+// Safe to comment out template rows if all are set to auto:
   grid-template-rows: auto auto auto auto auto;
 
   max-width: $max-width;
@@ -52,16 +52,14 @@
   'navTem'
   'mainTem'
   'footerTem';
-  //It's safe to comment template rows if all are set to auto:
+// Safe to comment out template rows if all are set to auto:
   grid-template-rows: auto auto auto auto;
 
   max-width: $max-width;
 }
 
 // ------------ Single Template areas |Main|Footer: -----------------
-// Main and Footer sections only, To create headers from scratch or any other
-// section using the the "openTem" (openTemplate) grid template erea.
-// Also notice that it hass a max-width $full-width (100%)
+// Notice that it hass a max-width $full-width (100%)
 // Example: Used in landing.html.
 .template-single {
   @extend %grid-init;
@@ -69,6 +67,7 @@
   'openTem'
   'mainTem'
   'footerTem';
-  grid-template-rows: auto auto 10vh;
+  // Safe to comment out template rows if all are set to auto:
+  grid-template-rows: auto auto auto;
   max-width: $full-width;
 }

@@ -74,10 +74,8 @@
 
   // ---------------- Container Display/Media Queries:
   .container-display {
-    grid-column-gap: 80px;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-    max-width: 95%;
+  grid-column-gap: $size-20;
+  grid-template-columns: auto auto auto;
     }
 }
 
