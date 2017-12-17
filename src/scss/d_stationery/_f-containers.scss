@@ -2,27 +2,30 @@
 // display: grid | inline-grid | subgrid;
 %container-init {
   @extend %global-padding;
-  //Color can be for visual feedback:
   background-color: $container-color;
   display: grid;
 }
 
-.container-generic {
-  @extend %container-init;
-}
-
-// Basically for cards or showcase of images etc., see the index,landing and about content.
-// It auto flows to 3 boxes per row, see media queries to change it to any number.
+// Basically for cards or showcase of images, text boxes etc., see the index,-
+// landing and about content. It auto flows to 3 boxes per row,-
+// see media queries to change it to any number.
 .container-display {
   @extend %container-init;
   grid-gap: $size-40;
 }
 
-// Gallery is not set with any media queries, just the .container-display does
-// Grid cells are in the _c-cards.scss file
+// Experimenting with a cell gallery, check _q-media-queries.scss for the spans.
 .container-gallery {
   @extend %container-init;
   grid-auto-rows: $size-200;
-  grid-gap: $size-6;
-  grid-template-columns: repeat(auto-fill, minmax($size-200, auto));
+  grid-gap: $size-16;
+  grid-template-columns: repeat(auto-fill, minmax($size-200, 1fr));
+
+  // Grid gallery cells:
+.grid-gallery-cell {
+    @extend %global-border-radius;
+    background-color: $grey;
+    color: $black;
+    text-align: center;
+}
 }
