@@ -1,4 +1,4 @@
-.container-generic, .container-display {
+.container-generic, .container-display, .container-gallery {
   padding: 0.75rem; }
 
 .h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .landing-page .h1-landing:hover, .button-global:hover, .button-light:hover {
@@ -178,13 +178,16 @@ h3 {
   .grid-gallery-cell:nth-child(8) {
     grid-column: span 2; }
 
-.container-generic, .container-display {
+.container-generic, .container-display, .container-gallery {
   background-color: #1e1f24;
   display: grid; }
 
 .container-display {
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 2.5rem; }
+
+.container-gallery {
+  grid-auto-rows: 12.5rem;
+  grid-gap: 0.375rem;
   grid-template-columns: repeat(auto-fill, minmax(12.5rem, auto)); }
 
 .icon-center {
@@ -250,7 +253,9 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center; }
   .hamburger-icon {
-    display: none; } }
+    display: none; }
+  .container-display {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (min-width: 50rem) {
   .nav-section .ul-nav {

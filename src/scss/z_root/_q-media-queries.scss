@@ -40,7 +40,7 @@
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-// ---------------- Nav/Media Queries:
+// ---------------- Nav, container-display/Media Queries:
 // 30rem = 480px
 @media (min-width: 30rem) {
   .nav-section {
@@ -54,6 +54,10 @@
   .hamburger-icon {
     display: none;
   }
+
+  .container-display {
+    grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
