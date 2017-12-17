@@ -1,4 +1,4 @@
-.container-generic, .container-display, .container-gallery {
+.container-display, .container-gallery {
   padding: 0.75rem; }
 
 .h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .landing-page .h1-landing:hover, .button-global:hover, .button-light:hover {
@@ -167,7 +167,7 @@ h3 {
   .button-light a {
     color: #0f0f0f; }
 
-.container-generic, .container-display, .container-gallery {
+.container-display, .container-gallery {
   background-color: #1e1f24;
   display: grid; }
 
@@ -177,7 +177,7 @@ h3 {
 .container-gallery {
   grid-auto-rows: 12.5rem;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); }
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, auto)); }
   .container-gallery .grid-gallery-cell {
     background-color: #999999;
     color: black;
