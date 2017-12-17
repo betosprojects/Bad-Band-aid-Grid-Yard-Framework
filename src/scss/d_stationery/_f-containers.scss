@@ -15,7 +15,7 @@
 // It auto flows to 3 boxes per row, see media queries to change it to any number.
 .container-display {
   @extend %container-init;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: auto;
   grid-gap: $size-16;
   grid-template-columns: repeat(auto-fill, minmax($size-200, auto));
 }
