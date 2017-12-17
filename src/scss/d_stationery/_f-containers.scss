@@ -12,6 +12,7 @@
 .container-display {
   @extend %container-init;
   grid-gap: $size-40;
+  // justify-content: center;
 }
 
 // Experimenting with a cell gallery, check _q-media-queries.scss for the spans.
@@ -19,7 +20,7 @@
   @extend %container-init;
   grid-auto-rows: $size-200;
   grid-gap: $size-16;
-  grid-template-columns: repeat(auto-fill, minmax($size-200, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax($size-200, auto));
 
   // Grid gallery cells:
 .grid-gallery-cell {
