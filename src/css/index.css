@@ -170,6 +170,13 @@ h3 {
 .grid-gallery-cell {
   background-color: #999999;
   color: black; }
+  .grid-gallery-cell:first-child {
+    grid-column: span 2;
+    grid-row: span 3; }
+  .grid-gallery-cell:nth-child(5) {
+    grid-row: span 2; }
+  .grid-gallery-cell:nth-child(8) {
+    grid-column: span 2; }
 
 .container-generic, .container-display {
   background-color: #1e1f24;

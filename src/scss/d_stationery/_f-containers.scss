@@ -11,7 +11,7 @@
   @extend %container-init;
 }
 
-// Basically for cards or showcase of images etc., see yard, blog and about content.
+// Basically for cards or showcase of images etc., see the index, yard and about content.
 // It auto flows to 3 boxes per row, see media queries to change it to any number.
 .container-display {
   @extend %container-init;
