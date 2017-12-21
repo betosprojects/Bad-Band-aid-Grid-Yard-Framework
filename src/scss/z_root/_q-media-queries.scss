@@ -1,49 +1,12 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES -=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=
 // No variables on media queries-----
 // IMPORTANT: Rememeber that Nav-Section is Flexbox
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-// ---------------- Nav, Hero/Media Queries:
-//  30rem = 480px.
-@media (max-width: 30rem) {
-  .nav-section {
-    // Hamburger icon and ul-nav toggle; Tweak this height to a specific
-    // size to toggle the nav menu's height:
-    height: 16rem;
-    overflow: hidden;
-    transition: height .5s;
-
-    .ul-nav {
-      margin: auto;
-      padding: $size-8;
-      width: 70%;
-    }
-  }
-
-  .logo-icon,
-  .hamburger-icon,
-  .h1-header {
-    float: none;
-    margin: $size-16 auto;
-    text-align: center;
-  }
-
-  // Toggle for Hamburger/Menu:
-  .toggle {
-    height: 0;
-  }
-
-  // Hero images don't stay fixed (parallax effects) on mobil devices?
-  .hero-image,
-  .landing-page {
-    background-attachment: scroll;
-  }
-}
-
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // ---------------- Nav, container-display/Media Queries:
 // 30rem = 480px
 @media (min-width: 30rem) {
   .nav-section {
+    height: auto;
+
     .ul-nav {
       flex-direction: row;
       //justify-content: flex-start | flex-end | center | space-between | space-around;
@@ -51,12 +14,17 @@
     }
   }
 
+  .logo-icon,
+  .h1-header {
+    float: left;
+}
+
   .hamburger-icon {
     display: none;
   }
 
   .container-display {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -76,11 +44,13 @@
     }
   }
 
-  // ---------------- Container Display | Container Gallery/Media Queries:
-  .container-display {
-    grid-template-columns: repeat(3, 1fr);
+  // landing.scss/html page is also using this extender for fixed sticky image:
+  %hero-image-init {
+    // background-attachment is set to scroll on mobil size, fixed doesn't work on mobil?:
+    background-attachment: fixed;
     }
 
+  // ---------------- Container Gallery/Media Queries:
   // Coontainer-Gallery:
   .grid-gallery-cell {
 
@@ -115,9 +85,8 @@
 }
 }
 
-
 // -=-=-=-=--=-=-=-=- CSS GRID Layout-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=
-// -------------- Template ==All==  min-width: 64rem: --------------------------
+// Moves the sidebars to top and bottom I haven't found a better solution yet
 // 64rem =  1024px:
 @media (min-width: 64rem) {
   .template-all {

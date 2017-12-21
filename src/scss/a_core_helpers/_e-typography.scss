@@ -8,8 +8,9 @@ h3 {
 }
 
 .h1-header {
-  float: left;
+  // float: left; // put this on media queries
   margin: $size-30;
+  text-align: center;
 
   &:hover {
     @extend %transition-fade;

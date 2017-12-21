@@ -1,7 +1,8 @@
 .container-display, .container-gallery {
   padding: 0.75rem; }
 
-.h1-header:hover, .hamburger-icon:hover, .logo-icon:hover, .landing-page .h1-landing:hover, .button-global:hover, .button-light:hover {
+.h1-header:hover, .logo-icon:hover,
+.hamburger-icon:hover, .landing-page .h1-landing:hover, .button-global:hover, .button-light:hover {
   opacity: .5;
   -webkit-transition: .5s;
   transition: .5s; }
@@ -47,8 +48,8 @@ h3 {
   font-weight: 700; }
 
 .h1-header {
-  float: left;
-  margin: 1.875rem; }
+  margin: 1.875rem;
+  text-align: center; }
 
 .titles {
   color: #545b71;
@@ -59,19 +60,19 @@ h3 {
   background-color: #0f0f0f;
   grid-area: headerTem; }
 
+.logo-icon,
 .hamburger-icon {
   cursor: pointer;
   display: block;
-  float: right;
-  margin: 2.5rem; }
-
-.logo-icon {
-  display: block;
-  float: left; }
+  margin: 1rem auto; }
 
 .nav-section {
   background-color: #272b35;
-  grid-area: navTem; }
+  grid-area: navTem;
+  height: calc(12.5rem + 3.125rem);
+  overflow: hidden;
+  -webkit-transition: height .5s;
+  transition: height .5s; }
 
 .ul-nav {
   display: -webkit-box;
@@ -80,7 +81,8 @@ h3 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0.5rem; }
   .ul-nav li {
     margin: 0.25rem;
     -webkit-transition-duration: .4s;
@@ -93,12 +95,15 @@ h3 {
     padding: 0.5rem 1.25rem;
     text-align: center; }
 
+.toggle {
+  height: 0; }
+
 .hero-section {
   background-color: #0f0f0f;
   grid-area: heroTem; }
 
 .hero-image, .landing-page {
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -140,7 +145,7 @@ h3 {
   justify-content: center;
   padding: 0 1.25rem;
   text-align: center; }
-  .landing-page h1,
+  .landing-page .h1-landing,
   .landing-page p {
     margin-bottom: 1.875rem; }
   .landing-page .h1-landing {
@@ -148,7 +153,8 @@ h3 {
 
 .footer-section {
   background-color: #0f0f0f;
-  grid-area: footerTem; }
+  grid-area: footerTem;
+  text-align: center; }
 
 .button-global, .button-light {
   display: block;
@@ -196,67 +202,50 @@ h3 {
 
 .template-all {
   grid-template-areas: 'headerTem' 'navTem' 'heroTem' 'sidebar1Tem' 'mainTem' 'sidebar2Tem' 'footerTem';
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: repeat(5, auto);
   max-width: 83.375rem; }
 
 .template-basic {
   grid-template-areas: 'headerTem' 'navTem' 'heroTem' 'mainTem' 'footerTem';
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: repeat(5, auto);
   max-width: 83.375rem; }
 
 .template-minimum {
   grid-template-areas: 'headerTem' 'navTem' 'mainTem' 'footerTem';
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(4, auto);
   max-width: 83.375rem; }
 
 .template-single {
   grid-template-areas: 'openTem' 'mainTem' 'footerTem';
-  grid-template-rows: auto auto auto;
+  grid-template-rows: repeat(3, auto);
   max-width: 100%; }
 
-@media (max-width: 30rem) {
-  .nav-section {
-    height: 16rem;
-    overflow: hidden;
-    -webkit-transition: height .5s;
-    transition: height .5s; }
-    .nav-section .ul-nav {
-      margin: auto;
-      padding: 0.5rem;
-      width: 70%; }
-  .logo-icon,
-  .hamburger-icon,
-  .h1-header {
-    float: none;
-    margin: 1rem auto;
-    text-align: center; }
-  .toggle {
-    height: 0; }
-  .hero-image,
-  .landing-page {
-    background-attachment: scroll; } }
-
 @media (min-width: 30rem) {
-  .nav-section .ul-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .nav-section {
+    height: auto; }
+    .nav-section .ul-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .logo-icon,
+  .h1-header {
+    float: left; }
   .hamburger-icon {
     display: none; }
   .container-display {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 50rem) {
   .nav-section .ul-nav {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
-  .container-display {
-    grid-template-columns: repeat(3, 1fr); }
+  .hero-image, .landing-page {
+    background-attachment: fixed; }
   .grid-gallery-cell:first-child {
     grid-column: span 2;
     grid-row: span 2; }

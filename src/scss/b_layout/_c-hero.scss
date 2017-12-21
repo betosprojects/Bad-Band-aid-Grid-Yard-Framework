@@ -6,8 +6,8 @@
 
 // landing.scss/html page is also using this extender:
 %hero-image-init {
-  // background-attachment is set to scroll in media-queries (fixed doesn't work on mobil):
-  background-attachment: fixed;
+  // background-attachment is set to fixed in media-queries (fixed doesn't work on mobil?):
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
