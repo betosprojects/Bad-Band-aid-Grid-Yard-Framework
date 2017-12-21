@@ -1,7 +1,7 @@
 // Thee Footsie:
 
 .footer-section {
-  background-color: $theme1-color;
+  background-color: var(--theme1-color);
   grid-area: footerTem;
   text-align: center;
 }

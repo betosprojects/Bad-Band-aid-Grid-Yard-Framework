@@ -1,19 +1,38 @@
-// The Base:, basically a simple reset file. Comment-out, delete and or compare
-// This file with other vendor resets.
+// The Base: If using other vendor resets, comment-out, delete and or compare
+// this file with other vendor resets.
+// Sass/SCSS linters give an error due to the :root/CSS vars.
 // -----------------------------------------------------------------------------
 
-//:root {}
+:root {
+  // Base Color CSS Variables:
+  --primary-color: #545b71;
+  --secondary-color: #0f0f0f;
+  --triadic-color: #000;
+  --accent-color: #3e4451;
 
-//body {}
+  // Typography Colors:
+  --text-color: #ddeaf2;
+  --titles-color: #545b71;
+  --a-color: #ddeaf2;
+  --h-color: #90a4ae;
+  --p-color: #fff;
+
+  // Cntainers/Themes:
+  --theme1-color:#0f0f0f;
+  --theme2-color:#272b35;
+  --container-color: #1e1f24;
+}
 
 html {
-  background: $body-html-color;
-  color: $text-color;
-  font-family: $text-font-stack;
   font-size: 100%;
   line-height: 1.5;
 }
 
+body {
+  background-color: var(--triadic-color);
+  color: var(--text-color);
+  font-family: $text-font-stack;
+}
 //----------------------------- Basic Reset-------------------------------------
 // Might want to comment out and or compare with vendor resets:
 *,
@@ -40,12 +59,7 @@ img {
 mark,
 code,
 .current {
-  background-color: $cement;
-  color: $black;
+  @extend %global-border-radius;
+  background-color: var(--accent-color);
   padding: $size-4;
   }
-
-// Styles for the current state links:
-.current {
-  @extend %global-border-radius;
-   }

@@ -3,12 +3,11 @@
 h1,
 h2,
 h3 {
-  color: $h-color;
+  color: var(--h-color);
   font-weight: 700;
 }
 
 .h1-header {
-  // float: left; // put this on media queries
   margin: $size-30;
   text-align: center;
 
@@ -18,7 +17,7 @@ h3 {
 }
 
 .titles {
-  color: $titles-color;
+  color: var(--titles-color);
   margin: $size-20 0;
   text-align: center;
  }

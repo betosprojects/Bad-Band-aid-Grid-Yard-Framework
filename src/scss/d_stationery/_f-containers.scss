@@ -2,7 +2,7 @@
 // display: grid | inline-grid | subgrid;
 %container-init {
   @extend %global-padding;
-  background-color: $container-color;
+  background-color: var(--container-color);
   display: grid;
 }
 
