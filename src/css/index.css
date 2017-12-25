@@ -73,6 +73,9 @@ h3 {
   margin: 1.25rem 0;
   text-align: center; }
 
+.p-block {
+  text-align: justify; }
+
 .header-section {
   background-color: var(--container-color);
   grid-area: headerTem; }
