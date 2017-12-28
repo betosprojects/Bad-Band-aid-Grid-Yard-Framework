@@ -6,13 +6,11 @@
   display: grid;
 }
 
-// Basically for cards or showcase of images, text boxes etc., see the index,-
-// landing and about content. It auto flows to 3 boxes per row,-
+// See the index, landing, about and contact. It auto flows to 3 boxes per row,-
 // see media queries to change it to any number.
 .container-display {
   @extend %container-init;
-  grid-gap: $size-40;
-  // justify-content: center;
+  grid-gap: $size-30;
 }
 
 // Experimenting with a cell gallery, check _q-media-queries.scss for the spans.
@@ -21,12 +19,21 @@
   grid-auto-rows: $size-200;
   grid-gap: $size-16;
   grid-template-columns: repeat(auto-fill, minmax($size-200, auto));
-
-  // Grid gallery cells:
-  .grid-gallery-cell {
-    @extend %global-border-radius;
-    background-color: $grey;
-    color: $black;
-    text-align: center;
+  // justify-content: center;
 }
+
+// Grid gallery container cells:
+.container-gallery-cell {
+  @extend %global-border-radius;
+  background-color: $grey;
+  color: $black;
+  text-align: center;
+}
+
+// Grid container cells, with out medida query spans -
+// See About pages:
+.container-cell {
+  @extend %global-border-radius;
+  background-color: $black;
+  color: $white;
 }
