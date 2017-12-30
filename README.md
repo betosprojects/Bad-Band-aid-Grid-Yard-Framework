@@ -1,6 +1,6 @@
 # Bad Band-aid CSS Grid Template Areas Framework
 
-**This is an ==ongoing==, responsive CSS Grid named template areas project.**
+**This is an ongoing, responsive CSS Grid named template areas project.**
 ***
  [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) introduces a two-dimensional grid system to CSS. In addition, I gave it a bit of Flexbox to a full screen page and the nav links section as a reference of it as well.
 ***
