@@ -9,7 +9,7 @@
 
 mark,
 code,
-.current, .ul-nav li, .container-gallery-cell, .container-cell {
+.current, .ul-nav li, .button-global, .button-light, .container-gallery-cell, .container-cell {
   border-radius: 0.375rem; }
 
 :root {
@@ -183,13 +183,15 @@ h3 {
 
 .button-global, .button-light {
   display: block;
-  margin: 1.25rem auto;
-  max-width: 6.25rem;
+  margin: 1rem auto;
+  max-width: calc(6.25rem + 2.5rem);
   padding: 0.5rem;
   text-align: center; }
   .button-global:hover, .button-light:hover {
     -webkit-box-shadow: var(--glow);
-    box-shadow: var(--glow); }
+    box-shadow: var(--glow);
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s; }
 
 .button-global {
   background-color: var(--secondary-color);
