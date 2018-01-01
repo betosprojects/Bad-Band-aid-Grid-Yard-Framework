@@ -2,34 +2,27 @@
 
 // button initializer:
 %button-init {
-  @extend %global-border-radius;
   display: block;
-  margin: $size-10 auto;
+  margin: $size-20 auto;
   max-width: $size-100;
   padding: $size-8;
   text-align: center;
 
   &:hover {
-    @extend %transition-fade;
+    box-shadow: var(--glow);
       }
 }
 
 // Global Button:
 .button-global {
   @extend %button-init;
-  background-color: $midnight;
-
-  a {
-    color: $cloud;
-  }
+  background-color: var(--secondary-color);
+  color: var(--grey-color);
 }
 
 // Light color button:
 .button-light {
   @extend %button-init;
-  background-color: $fog;
-
-  a {
-    color: $midnight;
-  }
+  background-color: var(--grey-color);
+  color: var(--secondary-color);
 }

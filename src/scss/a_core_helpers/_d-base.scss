@@ -1,7 +1,8 @@
 // The Base: If using other vendor resets, comment-out, delete and or compare
 // this file with other vendor resets.
-// Sass/SCSS linters give an error due to the :root/CSS vars.
 // -----------------------------------------------------------------------------
+// Sass/SCSS linters give an error/warning due to the :root/CSS vars.
+// Final CSS color variables, might swap these from Sass vars.
 
 :root {
   // Base Color CSS Variables:
@@ -9,6 +10,10 @@
   --secondary-color: #0f0f0f;
   --triadic-color: #000;
   --accent-color: #3e4451;
+
+  --black-color: #000;
+  --grey-color: #999;
+  --white-color: #fff;
 
   // Typography Colors:
   --text-color: #ddeaf2;
@@ -21,7 +26,11 @@
   --theme1-color:#0f0f0f;
   --theme2-color:#272b35;
   --container-color: #1e1f24;
+
+  // Misc;
+  --glow: 0 0 $size-4 #fff;
 }
+
 
 html {
   font-size: 100%;
@@ -33,6 +42,7 @@ body {
   color: var(--text-color);
   font-family: $text-font-stack;
 }
+
 //----------------------------- Basic Reset-------------------------------------
 // Might want to comment out and or compare with vendor resets:
 *,

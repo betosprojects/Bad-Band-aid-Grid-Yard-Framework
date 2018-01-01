@@ -25,8 +25,8 @@
 // Grid gallery container cells:
 .container-gallery-cell {
   @extend %global-border-radius;
-  background-color: $grey;
-  color: $black;
+  background-color: var(--grey-color);
+  color: var(--black-color);
   text-align: center;
 }
 
@@ -34,6 +34,6 @@
 // See About pages:
 .container-cell {
   @extend %global-border-radius;
-  background-color: $black;
-  color: $white;
+  background-color: var(--black-color);
+  color: var(--white);
 }

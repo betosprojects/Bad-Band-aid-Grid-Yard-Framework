@@ -23,9 +23,12 @@ typings/
 .yarn-integrity
 gulpfile.js
 package.json
+package-lock.json
+dest/
 dist/
 .eslintrc.json
 yarn.lock
+
 
 
 # VisualStudioCode/Editors

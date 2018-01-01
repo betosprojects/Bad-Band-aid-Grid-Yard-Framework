@@ -1,31 +1,12 @@
 // Sass variables
-// ------------------------------- @COLORS ----------------------------------
-// Basic:
-$black: rgba(0, 0, 0, 1);
-$orange: rgba(255, 165, 0, 1); // Basically I use this for testing
-$red: rgba(255, 0, 0, 1);  // Basically I use this for testing
-$white: rgba(255, 255, 255, 1);
-
-// Final CSS color variables are in _d-base.scss
-// Might merge all colors to base instead?
-
-// Named:
-$cement: rgba(84, 91, 113, 1);
-$fog: rgba(221, 234, 242, 1);
-$grey: rgba(153, 153, 153, 1);
-$cloud: rgba(144, 164, 174, 1);
-$charcoal: rgba(30, 31, 36, 1);
-$mist: rgba(176, 196, 223, 1);
-$midnight: rgba(15, 15, 15, 1);
+// Colors are at the base file (CSS variables).
 
 // ------------------------------- @FONTS --------------------------------------
-
-// $unique-font: 'SomeGoogleFontETC', cursive;
-
 // Regular font family  @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 // Code (monospace) font family
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
 
 // ----------------------------- @GLOBAL SIZES ---------------------------------
 //Based on 16px:
