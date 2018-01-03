@@ -1,7 +1,8 @@
 // Icon related images ------
 
 .icon-center {
+  display: block;
   height: 50px;
-  margin: auto;
+  margin: $size-16 auto;
   width: 50px;
 }

@@ -3,7 +3,7 @@
 .nav-section {
   background-color: var(--theme2-color);
   grid-area: navTem;
-  height: calc(#{$size-200} + #{$size-50}); //250px
+  height: calc(#{$size-200} + #{$size-50});
   overflow: hidden;
   transition: height .5s;
 }
@@ -15,7 +15,7 @@
 
   li {
     @extend %global-border-radius;
-    margin: $size-4;
+    margin: $size-8;
     transition-duration: .4s;
 
     &:hover {

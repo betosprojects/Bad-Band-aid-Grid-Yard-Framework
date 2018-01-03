@@ -1,8 +1,8 @@
-// The Base: If using other vendor resets, comment-out, delete and or compare
+// The Base: If using other vendor resets, comment-out, delete and or compare -
 // this file with other vendor resets.
 // -----------------------------------------------------------------------------
 // Sass/SCSS linters give an error/warning due to the :root/CSS vars.
-// Final CSS color variables, might swap these from Sass vars.
+// CSS color variables, might swap these from Sass vars.
 
 :root {
   // Base Color CSS Variables:
@@ -33,6 +33,7 @@
 
 
 html {
+  box-sizing: border-box;
   font-size: 100%;
   line-height: 1.5;
 }
@@ -44,16 +45,37 @@ body {
 }
 
 //----------------------------- Basic Reset-------------------------------------
-// Might want to comment out and or compare with vendor resets:
+// Might want to comment out and or compare with vendor resets -
+// Might want to set a media query for margin:
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: inherit;
+  // margin: 0;
+  // padding: 0;
 }
 
-// -----------------------------------------------------------------------------
+
+//-=-=-=-=--=-=-=--=-=- Basic Global Extend Helpers -=-=-=-=-=-=-=-==-=-=-=-=-=-
+// Example:
+// @extend %global-padding;
+
+%global-padding {
+  padding: $size-12;
+}
+
+%global-border-radius {
+  border-radius: $size-6;
+}
+
+%transition-fade {
+  opacity: .5;
+  transition: .5s;
+}
+
+//-=-=-=-=--=-=-=--=-=- END  Global Extend Helpers -=-=-=-=-=-=-==-=-=-=-=-=-=-=
+
+
 a,
 ul {
   list-style-type: none;
@@ -73,3 +95,5 @@ code,
   background-color: var(--accent-color);
   padding: $size-4;
   }
+
+  // -----------------------------------------------------------------------------

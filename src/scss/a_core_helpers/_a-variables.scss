@@ -1,15 +1,15 @@
 // Sass variables
-// Colors are at the base file (CSS variables).
+// Colors are at the base.scss file (CSS variables), or set them here
 
 // ------------------------------- @FONTS --------------------------------------
 // Regular font family  @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !default;
 // Code (monospace) font family
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 
 // ----------------------------- @GLOBAL SIZES ---------------------------------
-//Based on 16px:
+//Based on HTML font percent (100%)? :
 $size-1: .0625rem; // 1px
 $size-2: .125rem; // 2px
 $size-4: .25rem; // 4px
