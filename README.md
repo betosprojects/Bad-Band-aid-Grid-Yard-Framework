@@ -1,6 +1,6 @@
 # Bad Band-aid CSS Grid Template Areas Framework
 
-**This is an ongoing, responsive CSS Grid named template areas for my testing projects. Borrowed the idea and based on Hugo's  [boilerplateCSS Grid Layout](https://github.com/HugoGiraudel/sass-boilerplate) tweaked for my own liking.** 
+**This is an ongoing, responsive CSS Grid named template areas for my testing projects. Borrowed the idea and based on Hugo's  [Sass boilerplate](https://github.com/HugoGiraudel/sass-boilerplate).** 
 ## What's New:
 - Version 1.0 Jan. 2018!
 - Deleted or renamed func-ext-mixins.scss to bandaid.scss and merged its helpers to base for Sass to compile top level CSS to the top. Bandaid scss file is basically for testing, vendor, to-do etc. -
@@ -11,7 +11,4 @@
 ***
 ![Framework Snapshot](preview.jpg  "Thee Grid Yard Framework")
 Indexed and structured with SCSS ([Sass](http://sass-lang.com/)) files and directories. It's butt ugly and basic but it's for visual feedback I guess. :)
-
-
 ***
-No attribution required but you can buy me some coffee if you like. :)
