@@ -7,10 +7,10 @@
 - CSS color variables on base file, left Sass color variables for now but not forgotten :). -
 - Changed the default font stack, commented out margin and padding from the universal CSS selector and for it to inherit box-sizing from HTML -
 ***
- [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) introduces a two-dimensional grid system to CSS. In addition, I gave it a bit of Flexbox to a full screen page and the nav links section as a reference of it as well.
+ [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) introduces a two-dimensional grid system to CSS. In addition, I gave it a bit of Flexbox to a full screen landing page thanks to [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) for he's [tutorial ](https://www.youtube.com/watch?v=oRmQN244Ir0) that I have followed and borrowed from, Navigation bar is also flex-box, so I can have a reference of it in the mix as-well.
 ***
 ![Framework Snapshot](preview.jpg  "Thee Grid Yard Framework")
-Indexed and structured with SCSS ([Sass](http://sass-lang.com/)) files and directories.
+Indexed and structured with SCSS ([Sass](http://sass-lang.com/)) files and directories. It's butt ugly and basic but it's for visual feedback I guess. :)
 
 
 ***
