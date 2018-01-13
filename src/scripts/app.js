@@ -1,22 +1,22 @@
 // DOM Content Loader:
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-  // ------------------Nav Menu Toggle:
-  var eventClick = document.querySelector('.hamburger-icon');
-  var targetSelector = document.querySelector('.nav-section');
-  eventClick.addEventListener('click', function() {
-    targetSelector.classList.toggle('toggleMenu');
+
+// ------------------ Nav Menu Toggle:
+const clickItem = document.querySelector('.hamburger-icon');
+const targetSection = document.querySelector('.nav-section');
+
+clickItem.addEventListener('click', function () {
+targetSection.classList.toggle('toggle-menu');
 }, false);
-  // ------------------ END Nav Menu Toggle:
+// ------------------ END Nav Menu Toggle:
 
 
+// ---------------------------- Footer Year:
+const serveDate = new Date();
 
-  // ---------------------------- Footer Year:
-  var thisYear = new Date();
-  document.querySelector('#footYear').innerHTML = thisYear.getFullYear();
-  // ------------------------- END Footer Year
-
-
+document.querySelector("#footYear").innerHTML = serveDate.getFullYear();
+// ------------------------- END Footer Year
 
 
 

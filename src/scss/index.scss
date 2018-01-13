@@ -4,10 +4,8 @@
 @import
 'a_core_helpers/a-variables',
 'a_core_helpers/b-bandaid',
-'a_core_helpers/c-vendor',
 'a_core_helpers/d-base',
-'a_core_helpers/e-typography',
-'a_core_helpers/f-helpers';
+'a_core_helpers/e-typography';
 
 // B. LAYOUT -=-=-=-=-= Sections-Layout/ Mirrors the Grid Templates:
 @import
@@ -29,16 +27,14 @@
 
 // D. STATIONERY: -=-=-=-=-= Components, buttons, cards etc:
 @import
-'d_stationery/a-components',
+'d_stationery/a-containers',
 'd_stationery/b-buttons',
 'd_stationery/c-cards',
-'d_stationery/d-fonts',
-'d_stationery/f-containers',
+'d_stationery/f-fonts',
 'd_stationery/i-icons',
-'d_stationery/w-widgets';
+'d_stationery/z-components';
 
 // Z. ROOT: -=-=-=-=-= CSS Grids, themes, media-queries etc..:
 @import
 'z_root/a-grids',
-'z_root/e-themes',
 'z_root/q-media-queries';

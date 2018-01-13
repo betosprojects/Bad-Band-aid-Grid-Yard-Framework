@@ -1,8 +1,4 @@
-// The Base: If using other vendor resets, comment-out, delete and or compare -
-// this file with other vendor resets.
-// -----------------------------------------------------------------------------
-// Sass/SCSS linters give an error/warning due to the :root/CSS vars.
-// CSS color variables, might swap these from Sass vars.
+// CSS color variables:
 
 :root {
   // Base Color CSS Variables:
@@ -46,7 +42,6 @@ body {
 
 //----------------------------- Basic Reset-------------------------------------
 // Might want to comment out and or compare with vendor resets -
-// Might want to set a media query for margin:
 *,
 *::before,
 *::after {
@@ -93,7 +88,6 @@ code,
 .current {
   @extend %global-border-radius;
   background-color: var(--accent-color);
-  padding: $size-4;
   }
 
   // -----------------------------------------------------------------------------

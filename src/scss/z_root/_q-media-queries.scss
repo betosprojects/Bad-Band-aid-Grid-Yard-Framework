@@ -44,44 +44,11 @@
     }
   }
 
-  // landing.scss/html page is also using this extender for fixed sticky image:
+  // landing.scss/html page is also using this extender for fixed image:
   %hero-image-init {
     // background-attachment is set to scroll on mobil size, fixed doesn't work on mobil?:
     background-attachment: fixed;
     }
-
-  // ---------------- Yard's Container Gallery/Media Queries:
-  .container-gallery-cell {
-
-    &:first-child {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-
-    &:nth-child(2) {
-      grid-row: span 2;
-    }
-
-    &:nth-child(5) {
-      grid-row: span 2;
-    }
-
-    &:nth-child(6) {
-      grid-column: span 2;
-    }
-
-    &:nth-child(7) {
-      grid-column: span 2;
-    }
-
-    &:nth-child(10) {
-      grid-column: span 2;
-    }
-
-    // &:last-child {
-    //     grid-column: span 3;
-    // }
-}
 }
 
 // -=-=-=-=--=-=-=-=- CSS GRID Layout-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=
