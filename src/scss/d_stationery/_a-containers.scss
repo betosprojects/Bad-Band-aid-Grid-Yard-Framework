@@ -17,28 +17,5 @@
 .container-cell {
   @extend %global-border-radius;
   background-color: var(--black-color);
-  color: var(--white);
-}
-
-
-
-
-
-// --------------------TESTING ONLY, DELETE IF NOT USING------------------------
-// ----------------------------SEE YARD PAGE------------------------------------
-// Experimenting with a cell gallery, check _q-media-queries.scss for the spans:
-.container-gallery {
-  @extend %container-init;
-  grid-auto-rows: $size-200;
-  grid-gap: $size-16;
-  grid-template-columns: repeat(auto-fill, minmax($size-200, auto));
-  // justify-content: center;
-}
-
-// Grid gallery container cells:
-.container-gallery-cell {
-  @extend %global-border-radius;
-  background-color: var(--grey-color);
-  color: var(--black-color);
-  text-align: center;
+  color: var(--white-color);
 }
