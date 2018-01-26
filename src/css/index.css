@@ -7,7 +7,7 @@
   --grey-color: #999;
   --white-color: #fff;
   --text-color: #ddeaf2;
-  --titles-color: #545b71;
+  --titles-color: #90a4ae;
   --a-color: #ddeaf2;
   --h-color: #90a4ae;
   --p-color: #fff;
@@ -33,12 +33,12 @@ body {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
-.container-display, .container-gallery {
+.container-display {
   padding: 0.75rem; }
 
 mark,
 code,
-.current, .ul-nav li, .container-cell, .container-gallery-cell, .button-global, .button-light {
+.current, .ul-nav li, .container-cell, .button-global, .button-light {
   border-radius: 0.375rem; }
 
 .h1-header:hover, .logo-icon:hover,
@@ -180,8 +180,7 @@ h3 {
   .landing-page .h1-landing {
     font-size: 2.5rem; }
 
-.container-display, .container-gallery {
-  background-color: var(--container-color);
+.container-display {
   display: grid; }
 
 .container-display {
@@ -189,17 +188,10 @@ h3 {
 
 .container-cell {
   background-color: var(--black-color);
-  color: var(--white); }
+  color: var(--white-color); }
 
-.container-gallery {
-  grid-auto-rows: 12.5rem;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(12.5rem, auto)); }
-
-.container-gallery-cell {
-  background-color: var(--grey-color);
-  color: var(--black-color);
-  text-align: center; }
+.container-generic {
+  margin: 1.875rem; }
 
 .button-global, .button-light {
   display: block;

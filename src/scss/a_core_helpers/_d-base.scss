@@ -1,7 +1,6 @@
 // CSS color variables:
 
 :root {
-  // Base Color CSS Variables:
   --primary-color: #545b71;
   --secondary-color: #0f0f0f;
   --triadic-color: #000;
@@ -13,7 +12,7 @@
 
   // Typography Colors:
   --text-color: #ddeaf2;
-  --titles-color: #545b71;
+  --titles-color: #90a4ae;
   --a-color: #ddeaf2;
   --h-color: #90a4ae;
   --p-color: #fff;
@@ -78,7 +77,7 @@ ul {
 }
 
 img {
-  border: 0;
+  // border: 0;
   max-width: 100%;
 }
 

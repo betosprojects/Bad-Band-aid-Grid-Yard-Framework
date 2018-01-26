@@ -2,20 +2,24 @@
 // display: grid | inline-grid | subgrid;
 %container-init {
   @extend %global-padding;
-  background-color: var(--container-color);
   display: grid;
 }
 
-// See the index, landing, about and contact. It auto flows to 3 boxes per row,-
+// See the index, landing and about. It auto flows to 3 boxes per row,-
 // see media queries to change it to any number:
 .container-display {
   @extend %container-init;
   grid-gap: $size-30;
 }
 
-// Grid container cells, with-out medida query spans. Used in read more panels:
+// Grid container cells, without medida query. Used in read more panels:
 .container-cell {
   @extend %global-border-radius;
   background-color: var(--black-color);
   color: var(--white-color);
+}
+
+// Generic container without grid enabled:
+.container-generic {
+  margin: $size-30;
 }
