@@ -50,6 +50,32 @@ code,
   -webkit-transition: .5s;
   transition: .5s; }
 
+.anim-zoomin {
+  -webkit-animation: anim-zoomin 0.3s cubic-bezier(0.72, 0.2, 0.96, 0.39);
+  animation: anim-zoomin 0.3s cubic-bezier(0.72, 0.2, 0.96, 0.39);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom; }
+
+@-webkit-keyframes anim-zoomin {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.65, 0.75, 1);
+    transform: scale3d(0.65, 0.75, 1); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes anim-zoomin {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.65, 0.75, 1);
+    transform: scale3d(0.65, 0.75, 1); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
 a,
 ul {
   list-style-type: none;
