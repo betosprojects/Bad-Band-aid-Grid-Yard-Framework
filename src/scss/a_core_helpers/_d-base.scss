@@ -1,42 +1,13 @@
-// CSS color variables:
-
-:root {
-  --primary-color: #545b71;
-  --secondary-color: #0f0f0f;
-  --triadic-color: #000;
-  --accent-color: #3e4451;
-
-  --black-color: #000;
-  --grey-color: #999;
-  --white-color: #fff;
-
-  // Typography Colors:
-  --text-color: #ddeaf2;
-  --titles-color: #90a4ae;
-  --a-color: #ddeaf2;
-  --h-color: #90a4ae;
-  --p-color: #fff;
-
-  // Cntainers/Themes:
-  --theme1-color:#0f0f0f;
-  --theme2-color:#272b35;
-  --container-color: #1e1f24;
-
-  // Misc;
-  --glow: 0 0 $size-4 #fff;
-}
-
-
 html {
   box-sizing: border-box;
-  font-size: 100%;
-  line-height: 1.5;
 }
 
 body {
-  background-color: var(--triadic-color);
+  background-color: var(--theme1);
   color: var(--text-color);
   font-family: $text-font-stack;
+  font-size: 100%;
+  line-height: 1.5;
 }
 
 //----------------------------- Basic Reset-------------------------------------
@@ -86,7 +57,5 @@ mark,
 code,
 .current {
   @extend %global-border-radius;
-  background-color: var(--accent-color);
+  background-color: var(--swatch4);
   }
-
-  // -----------------------------------------------------------------------------

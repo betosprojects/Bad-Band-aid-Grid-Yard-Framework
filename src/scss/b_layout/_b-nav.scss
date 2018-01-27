@@ -1,7 +1,7 @@
 // Hamburger icon and ul-nav toggle; Tweak this height to a specific
 // size to toggle the nav menu's height:
 .nav-section {
-  background-color: var(--theme2-color);
+  background-color: var(--theme2);
   grid-area: navTem;
   height: calc(#{$size-200} + #{$size-80}); // 280px
   overflow: hidden;
@@ -19,7 +19,7 @@
     transition-duration: .4s;
 
     &:hover {
-      background-color: var(--accent-color);
+      background-color: var(--swatch4);
     }
   }
 

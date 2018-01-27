@@ -1,6 +1,4 @@
-// Sass variables
-// Colors are at the base.scss file (CSS variables), or set them here
-
+// Sass Variables:
 // ------------------------------- @FONTS --------------------------------------
 // Regular font family:
 $text-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !default;
@@ -41,6 +39,43 @@ $size-1000: 62.5rem; // 1000px
 // calc(#{$size-100} + #{$size-18});
 // 960px:
 // calc(#{$size-500} + #{$size-400} + #{$size-60});
+
+
+// ------------------------------- @COLORS -------------------------------------
+// CSS VARIABLES:
+:root {
+  --black: #000;
+  --grey: #999;
+  --white: #fff;
+
+  //  Color Palette:
+  --swatch1: #fff1c5;
+  --swatch2: #9b5d73;
+  --swatch3: #c38b8b;
+  --swatch4: #61405e;
+  --swatch5: #88af92;
+
+  // Cntainers/Themes Colors:
+  --theme1: #393232;
+  --theme2: #4d4545;
+  --theme3: #8d6262;
+  --theme4: #161616;
+
+  // Typography Colors:
+  --text-color: var(--swatch1);
+  --titles-color: var(--swatch3);
+  --a-color: var(--swatch1);
+  --h-color: var(--swatch4);
+  --p-color: var(--white);
+
+  // Buttons:
+  --button1-color: var(--swatch4);
+
+  // Misc;
+  --glow: 0 0 $size-4 var(--swatch5);
+}
+
+
 
 // Max Width and Full Width see grids.scss:
 // 73.75rem is same or more or less as 1180px, 960px is 60rem, 83.375rem = 1366px

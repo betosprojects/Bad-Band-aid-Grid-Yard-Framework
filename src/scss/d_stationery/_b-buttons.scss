@@ -1,6 +1,4 @@
-// Custom made buttons:
-
-// button initializer:
+// Buttons:
 %button-init {
   @extend %global-border-radius;
   display: block;
@@ -18,13 +16,6 @@
 // Global Button:
 .button-global {
   @extend %button-init;
-  background-color: var(--secondary-color);
-  color: var(--grey-color);
-}
-
-// Light color button:
-.button-light {
-  @extend %button-init;
-  background-color: var(--grey-color);
-  color: var(--secondary-color);
+  background-color: var(--button1-color);
+  color: var(--text-color);
 }
