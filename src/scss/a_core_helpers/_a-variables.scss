@@ -1,10 +1,5 @@
-// Sass Variables:
-// ------------------------------- @FONTS --------------------------------------
-// Regular font family:
-$text-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !default;
-// Code (monospace) font family:
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
+// ---------------------------- Sass VARIABLES: --------------------------------
 
 // ----------------------------- @GLOBAL SIZES ---------------------------------
 //Based on HTML font percent (100% || 16px) :
@@ -41,8 +36,16 @@ $size-1000: 62.5rem; // 1000px
 // calc(#{$size-500} + #{$size-400} + #{$size-60});
 
 
+// Max Width and Full Width see grids.scss:
+// 73.75rem is same or more or less as 1180px, 960px is 60rem, 83.375rem = 1366px
+$max-width: 83.375rem !default;
+
+// Templates with full screen width like a landing page (landing.html):
+$full-width: 100% !default;
+
+// ---------------------------- CSS VARIABLES: ---------------------------------
+
 // ------------------------------- @COLORS -------------------------------------
-// CSS VARIABLES:
 :root {
   --black: #000;
   --grey: #999;
@@ -66,7 +69,11 @@ $size-1000: 62.5rem; // 1000px
   --titles-color: var(--swatch3);
   --a-color: var(--swatch1);
   --h-color: var(--swatch4);
-  --p-color: var(--white);
+  --p-color: var(--white);  
+
+  // Font Stacks:
+--default-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
 
   // Buttons:
   --button1-color: var(--swatch4);
@@ -74,12 +81,4 @@ $size-1000: 62.5rem; // 1000px
   // Misc;
   --glow: 0 0 $size-4 var(--swatch5);
 }
-
-
-
-// Max Width and Full Width see grids.scss:
-// 73.75rem is same or more or less as 1180px, 960px is 60rem, 83.375rem = 1366px
-$max-width: 83.375rem !default;
-
-// Templates with full screen width like a landing page (landing.html):
-$full-width: 100% !default;
+// -------------------------- END of CSS VARIABLES: ------------------------------

@@ -5,7 +5,7 @@ html {
 body {
   background-color: var(--theme1);
   color: var(--text-color);
-  font-family: $text-font-stack;
+  font-family: var(--default-font-stack);
   font-size: 100%;
   line-height: 1.5;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 
-//-=-=-=-=--=-=-=--=-=- Basic Global Extend Helpers -=-=-=-=-=-=-=-==-=-=-=-=-=-
+//-=-=-=-=--=-=-=--=-=- Basic Global Extend/Helpers -=-=-=-=-=-=-=-==-=-=-=-=-=-
 // Example:
 // @extend %global-padding;
 
@@ -38,7 +38,7 @@ body {
   transition: .5s;
 }
 
-// Class Extenders:
+// --------------------Class Helpers:
 .anim-zoomin {
   animation: anim-zoomin .3s cubic-bezier(.72, .2, .96, .39);
   transform-origin: center bottom;
@@ -55,7 +55,7 @@ body {
   }
 }
 
-//-=-=-=-=--=-=-=--=-=- END  Global Extend Helpers -=-=-=-=-=-=-==-=-=-=-=-=-=-=
+//-=-=-=-=--=-=-=--=-=- END  Global Extend/Helpers -=-=-=-=-=-=-==-=-=-=-=-=-=-=
 
 
 a,
