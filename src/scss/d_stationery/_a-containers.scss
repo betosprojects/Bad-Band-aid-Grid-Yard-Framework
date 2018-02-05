@@ -15,12 +15,12 @@
 // Grid container cells, without medida query. Used in read more panels:
 .container-cell {
   @extend %global-border-radius;
-  background-color: var(--theme2);
+  background-color: var(--swatch5);
   color: var(--p-color);
 }
 
 // Generic container without grid enabled:
 .container-generic {
-  background-color: var(--theme2);
+  background-color: var(--swatch5);
   margin: $size-30;
 }

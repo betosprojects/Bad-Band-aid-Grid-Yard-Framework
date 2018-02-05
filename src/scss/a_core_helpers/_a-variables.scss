@@ -45,40 +45,43 @@ $full-width: 100% !default;
 
 // ---------------------------- CSS VARIABLES: ---------------------------------
 
-// ------------------------------- @COLORS -------------------------------------
+// ---------------------------- @COLOR PALETTE ---------------------------------
 :root {
-  --black: #000;
-  --grey: #999;
-  --white: #fff;
+// --=-=-=-=-=-=-=-=-=- Color Palette:
+// Comment-out a theme to use the other
 
-  //  Color Palette:
-  --swatch1: #fff1c5;
-  --swatch2: #9b5d73;
-  --swatch3: #c38b8b;
-  --swatch4: #61405e;
-  --swatch5: #88af92;
+//  BLUE-GREY THEME:
 
-  // Cntainers/Themes Colors:
-  --theme1: #393232;
-  --theme2: #4d4545;
-  --theme3: #8d6262;
-  --theme4: #161616;
+--swatch1: rgba(236, 239, 241, 1);
+--swatch2: rgba(144, 164, 174, 1);
+--swatch3: rgba(96, 125, 139, 1);
+--swatch4: rgba(55, 71, 79, 1);
+--swatch5:rgba(38, 50, 56, 1);
 
-  // Typography Colors:
-  --text-color: var(--swatch1);
-  --titles-color: var(--swatch3);
-  --a-color: var(--swatch1);
-  --h-color: var(--swatch4);
-  --p-color: var(--white);  
 
-  // Font Stacks:
+//  BROWN THEME:
+
+// --swatch1: rgba(239, 235, 233, 1);
+// --swatch2: rgba(188, 170, 164, 1);
+// --swatch3: rgba(121, 85, 72, 1);
+// --swatch4: rgba(93, 64, 55, 1);
+// --swatch5:rgba(62, 39, 35, 1);
+
+
+// Typography Colors:
+--text-color: var(--swatch1);
+--titles-color: var(--swatch2);
+--h-color: var(--swatch2);
+--p-color: var(--swatch1);  
+
+// Font Stacks:
 --default-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  
 
-  // Buttons:
-  --button1-color: var(--swatch4);
 
-  // Misc;
-  --glow: 0 0 $size-4 var(--swatch5);
+// Buttons:
+--button1-color: var(--swatch4);
+
+// Misc;
+--glow: 0 0 $size-4 var(--swatch1);
 }
 // -------------------------- END of CSS VARIABLES: ------------------------------

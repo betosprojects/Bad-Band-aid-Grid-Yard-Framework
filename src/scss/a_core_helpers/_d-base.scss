@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: var(--theme1);
+  background-color: var(--swatch4);
   color: var(--text-color);
   font-family: var(--default-font-stack);
   font-size: 100%;
@@ -74,5 +74,5 @@ mark,
 code,
 .current {
   @extend %global-border-radius;
-  background-color: var(--swatch4);
+  background-color: var(--button1-color);
   }
