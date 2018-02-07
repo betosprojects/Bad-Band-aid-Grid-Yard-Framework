@@ -140,7 +140,7 @@ h3 {
     padding: 0.5rem 1.25rem;
     text-align: center; }
 
-.toggle-menu {
+.js-toggle-menu {
   height: 0; }
 
 .hero-section {
@@ -295,4 +295,3 @@ h3 {
   .template-all {
     grid-template-areas: 'headerTem headerTem headerTem' 'navTem navTem navTem' 'heroTem heroTem heroTem' 'sidebar1Tem mainTem sidebar2Tem' 'footerTem footerTem footerTem';
     grid-template-columns: 1fr 4fr 1fr; } }
-

@@ -41,16 +41,15 @@ $size-1000: 62.5rem; // 1000px
 $max-width: 83.375rem !default;
 
 // Templates with full screen width like a landing page (landing.html):
-$full-width: 100% !default;
+$full-width: 100%;
 
 // ---------------------------- CSS VARIABLES: ---------------------------------
 
-// ---------------------------- @COLOR PALETTE ---------------------------------
 :root {
 // --=-=-=-=-=-=-=-=-=- Color Palette:
-// Comment-out a theme to use the other
+// Comment-out a theme set to use the other
 
-//  BLUE-GREY THEME:
+// ----------   BLUE-GREY THEME:
 
 --swatch1: rgba(236, 239, 241, 1);
 --swatch2: rgba(144, 164, 174, 1);
@@ -59,13 +58,13 @@ $full-width: 100% !default;
 --swatch5:rgba(38, 50, 56, 1);
 
 
-//  BROWN THEME:
+// ----------  GREY THEME:
 
-// --swatch1: rgba(239, 235, 233, 1);
-// --swatch2: rgba(188, 170, 164, 1);
-// --swatch3: rgba(121, 85, 72, 1);
-// --swatch4: rgba(93, 64, 55, 1);
-// --swatch5:rgba(62, 39, 35, 1);
+// --swatch1: rgba(244, 243, 243, 1);
+// --swatch2: rgba(179, 179, 179, 1);
+// --swatch3: rgba(128, 128, 128, 1);
+// --swatch4: rgba(77, 77, 77, 1);
+// --swatch5:rgba(31, 32, 36, 1);
 
 
 // Typography Colors:
