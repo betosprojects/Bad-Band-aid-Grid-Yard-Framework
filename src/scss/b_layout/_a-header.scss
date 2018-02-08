@@ -12,5 +12,6 @@
 
   &:hover {
     @extend %transition-fade;
+    transform: scale(1.2, 1);
   }
 }

@@ -110,6 +110,10 @@ h3 {
   cursor: pointer;
   display: block;
   margin: 1rem auto; }
+  .logo-icon:hover,
+  .hamburger-icon:hover {
+    -webkit-transform: scale(1.2, 1);
+    transform: scale(1.2, 1); }
 
 .nav-section {
   background-color: var(--swatch3);
