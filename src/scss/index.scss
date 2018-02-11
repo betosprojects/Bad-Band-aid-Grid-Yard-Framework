@@ -3,9 +3,11 @@
 // A. CORE-HELPERS -=-=-=-=-=  Configuration/ Global Helpers:
 @import
 'a_core_helpers/a-variables',
-'a_core_helpers/b-bandaid',
+'a_core_helpers/b-animations',
+'a_core_helpers/c-helpers',
 'a_core_helpers/d-base',
-'a_core_helpers/e-typography';
+'a_core_helpers/e-typography',
+'a_core_helpers/f-bandaid';
 
 // B. LAYOUT -=-=-=-=-= Sections-Layout/ Mirrors the Grid Templates:
 @import

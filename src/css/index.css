@@ -12,31 +12,6 @@
   --button1-color: var(--swatch4);
   --glow: 0 0 0.25rem var(--swatch1); }
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  background-color: var(--swatch4);
-  color: var(--text-color);
-  font-family: var(--default-font-stack);
-  font-size: 100%;
-  line-height: 1.5; }
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit; }
-
-.container-display {
-  padding: 0.75rem; }
-
-mark,
-code,
-.current, .ul-nav li, .container-cell, .button-global {
-  border-radius: 0.375rem; }
-
 .h1-header:hover, .logo-icon:hover,
 .hamburger-icon:hover, .landing-page h1:hover {
   opacity: .5;
@@ -68,6 +43,31 @@ code,
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+
+.container-display {
+  padding: 0.75rem; }
+
+mark,
+code,
+.current, .ul-nav li, .container-cell, .button-global {
+  border-radius: 0.375rem; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: var(--swatch4);
+  color: var(--text-color);
+  font-family: var(--default-font-stack);
+  font-size: 100%;
+  line-height: 1.5; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
 
 a,
 ul {

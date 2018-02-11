@@ -1,0 +1,23 @@
+// Animation Examples:
+// ------------------- fade-transition ---------------------
+%transition-fade {
+  opacity: .5;
+  transition: .5s;
+}
+
+// ------------------- anim-zoomin -------------------------
+.anim-zoomin {
+  animation: anim-zoomin .3s cubic-bezier(.72, .2, .96, .39);
+  transform-origin: center bottom;
+}
+@keyframes anim-zoomin {
+  from {
+    opacity: 0;
+    transform: scale3d(.65, .75, 1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}

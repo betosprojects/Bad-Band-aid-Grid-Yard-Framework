@@ -1,0 +1,13 @@
+// Helpers/Extends
+
+//-=-=-=-=--=-=-=--=-=- Basic Global Extend/Helpers -=-=-=-=-=-=-=-==-=-=-=-=-=-
+// Usage:
+// @extend %global-padding;
+
+%global-padding {
+  padding: $size-12;
+}
+
+%global-border-radius {
+  border-radius: $size-6;
+}
