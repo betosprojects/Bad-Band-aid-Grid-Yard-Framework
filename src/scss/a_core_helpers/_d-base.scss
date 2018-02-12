@@ -33,13 +33,6 @@ ul {
 
 img {
   // border: 0;
+  display: block;
   max-width: 100%;
 }
-
-// Highlighters:
-mark,
-code,
-.current {
-  @extend %global-border-radius;
-  background-color: var(--button1-color);
-  }

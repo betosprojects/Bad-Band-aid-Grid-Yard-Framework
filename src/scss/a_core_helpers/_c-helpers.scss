@@ -11,3 +11,11 @@
 %global-border-radius {
   border-radius: $size-6;
 }
+
+// Highlighters:
+mark,
+code,
+.current {
+  @extend %global-border-radius;
+  background-color: var(--button1-color);
+  }
