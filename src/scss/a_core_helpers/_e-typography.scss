@@ -18,12 +18,13 @@ h3 {
 
 // Might move these to helpers.scss? :
 .titles {
+  @extend %global-padding;
   color: var(--titles-color);
-  margin: $size-20 0;
   text-align: center;
  }
 
 .p-block {
-  padding: $size-10;
+  // display: block;
+  @extend %global-padding;
   text-align: justify;
  }

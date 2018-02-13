@@ -4,8 +4,9 @@
   --swatch3: #607d8b;
   --swatch4: #37474f;
   --swatch5: #263238;
+  --swatch-accent: #bae8d8;
   --text-color: var(--swatch1);
-  --titles-color: var(--swatch2);
+  --titles-color: var(--swatch-accent);
   --h-color: var(--swatch2);
   --p-color: var(--swatch1);
   --default-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -44,7 +45,7 @@
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-.container-display {
+.titles, .p-block, .container-display, .container-masonry {
   padding: 0.75rem; }
 
 mark,
@@ -95,11 +96,9 @@ h3 {
 
 .titles {
   color: var(--titles-color);
-  margin: 1.25rem 0;
   text-align: center; }
 
 .p-block {
-  padding: 0.625rem;
   text-align: justify; }
 
 .header-section {
@@ -205,11 +204,15 @@ h3 {
   .landing-page h1 {
     font-size: 2.5rem; }
 
-.container-display {
-  display: grid; }
+.container-display, .container-masonry {
+  display: grid;
+  grid-gap: 1rem; }
 
 .container-display {
-  grid-gap: 1.875rem; }
+  grid-template-columns: repeat(3, minmax(250px, 1fr)); }
+
+.container-masonry {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
 .container-cell {
   background-color: var(--swatch5);
@@ -238,6 +241,9 @@ h3 {
 .icon-center {
   height: 3.125rem;
   margin: 1rem auto; }
+
+.image-thumb {
+  width: 100%; }
 
 .template-all, .template-basic, .template-minimum, .template-single {
   display: grid;
@@ -280,9 +286,7 @@ h3 {
   .h1-header {
     float: left; }
   .hamburger-icon {
-    display: none; }
-  .container-display {
-    grid-template-columns: repeat(3, 1fr); } }
+    display: none; } }
 
 @media (min-width: 50rem) {
   .nav-section .ul-nav {

@@ -11,7 +11,7 @@ body {
 }
 
 //----------------------------- Basic Reset-------------------------------------
-// Might want to comment out and or compare with vendor resets -
+// Comment out and or paste/compare with vendor resets: -
 *,
 *::before,
 *::after {
@@ -19,11 +19,6 @@ body {
   // margin: 0;
   // padding: 0;
 }
-
-
-
-//-=-=-=-=--=-=-=--=-=- END  Global Extend/Helpers -=-=-=-=-=-=-==-=-=-=-=-=-=-=
-
 
 a,
 ul {
