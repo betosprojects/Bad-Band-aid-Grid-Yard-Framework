@@ -45,6 +45,10 @@
     // background-attachment is set to scroll on mobil size, fixed doesn't work on mobil?:
     background-attachment: fixed;
     }
+
+  .container-display {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
 }
 
 // -=-=-=-=--=-=-=-=- CSS GRID Layout-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=

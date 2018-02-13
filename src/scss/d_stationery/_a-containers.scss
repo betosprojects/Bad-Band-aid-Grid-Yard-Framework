@@ -7,9 +7,9 @@
 }
 
 // See the index, landing and about. It auto flows to 3 boxes per row,-
+// Check out the media queries to change the columns other than 3 or just auto-fill
 .container-display {
   @extend %container-init;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
 }
 
 // Masonry style layouts container (see yard page):
