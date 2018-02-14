@@ -49,6 +49,10 @@
   .container-display {
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     }
+
+  .container-masonry {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    }
 }
 
 // -=-=-=-=--=-=-=-=- CSS GRID Layout-- Media Queries -=-=-=-=-=-=-=-=-=-=-=-=-=

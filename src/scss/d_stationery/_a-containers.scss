@@ -3,7 +3,7 @@
 %container-init {
   @extend %global-padding;
   display: grid;
-  grid-gap: $size-16;
+  grid-gap: $size-20;
 }
 
 // See the index, landing and about. It auto flows to 3 boxes per row,-
@@ -16,7 +16,7 @@
 // Just like container-display but it auto-fills
 .container-masonry {
   @extend %container-init;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 // Grid container cells, without medida query. Used in read more panels:
