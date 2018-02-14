@@ -1,11 +1,15 @@
 // Hamburger icon and ul-nav toggle; Tweak the height to a specific
-// size to toggle the nav menu's height:
+// size to toggle the nav menu's height.
+// IMPORTANT: If you want a sticky Nav bar
+// uncomment the position: sticky; and the top: 0;:
 .nav-section {
   background-color: var(--swatch3);
   grid-area: navTem;
   height: calc(#{$size-200} + #{$size-80});
   overflow: hidden;
   transition: height .5s;
+  // position: sticky;
+  // top: 0;
 }
 
 .ul-nav {
