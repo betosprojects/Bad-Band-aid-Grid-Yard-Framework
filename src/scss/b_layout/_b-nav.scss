@@ -2,6 +2,7 @@
 // Tweak the height to a specific -
 // size to toggle the nav menu's height
 .nav-section {
+  @extend %global-box-shadow;
   background-color: var(--swatch-nav);
   grid-area: navTem;
   height: 0;

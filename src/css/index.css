@@ -1,4 +1,9 @@
 :root {
+  --swatch-black: #0b0c0c;
+  --swatch-dark: rgba(14, 17, 26, 0.4);
+  --swatch-white: #e1e5ec;
+  --swatch-red: #c74734;
+  --swatch-orange: #ffb047;
   --swatch-accent: #a2b685;
   --swatch1: #eceff1;
   --swatch2: #9ab0ba;
@@ -15,8 +20,7 @@
   --swatch-p: var(--swatch2);
   --default-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --swatch-button1: var(--swatch4);
-  --swatch-icon: var(--swatch-accent);
-  --glow: 0 0 0.25rem var(--swatch1); }
+  --swatch-icon: var(--swatch-accent); }
 
 .h1-header:hover, .landing-page h1:hover {
   opacity: .5;
@@ -94,6 +98,14 @@
 
 .current, .ul-nav li, .container-cell, .button-global {
   border-radius: 0.375rem; }
+
+.nav-section, .hamburger-icon {
+  -webkit-box-shadow: 0 0.25rem 0.375rem 0 var(--swatch-dark), 0 0.375rem 0.625rem 0 var(--swatch-dark);
+  box-shadow: 0 0.25rem 0.375rem 0 var(--swatch-dark), 0 0.375rem 0.625rem 0 var(--swatch-dark); }
+
+.button-global:hover {
+  -webkit-box-shadow: 0 0 0.125rem var(--swatch1);
+  box-shadow: 0 0 0.125rem var(--swatch1); }
 
 .current {
   background-color: var(--swatch-button1); }
@@ -267,8 +279,6 @@ h3 {
   padding: 0.5rem;
   text-align: center; }
   .button-global:hover {
-    -webkit-box-shadow: var(--glow);
-    box-shadow: var(--glow);
     -webkit-transition-duration: .8s;
     transition-duration: .8s; }
 
@@ -318,7 +328,7 @@ h3 {
   .hamburger-icon path {
     fill: var(--swatch-icon); }
   .hamburger-icon:hover path {
-    fill: #ffb047; }
+    fill: var(--swatch-orange); }
 
 .image-thumb {
   margin: auto;

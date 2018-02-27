@@ -8,7 +8,7 @@
   text-align: center;
 
   &:hover {
-    box-shadow: var(--glow);
+    @extend %global-box-glow;
     transition-duration: .8s;
       }
 }

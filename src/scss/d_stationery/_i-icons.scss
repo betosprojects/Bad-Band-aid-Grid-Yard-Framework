@@ -66,6 +66,7 @@
 
 // Toggle menu icon
 .hamburger-icon {
+  @extend %global-box-shadow;  
   cursor: pointer;
   height: $size-40;
   left: 0;
@@ -80,7 +81,7 @@
 
   &:hover {
     path {
-      fill: $swatch-orange;
+      fill: var(--swatch-orange);
     }
   }
 }

@@ -12,6 +12,14 @@
   border-radius: $size-6;
 }
 
+%global-box-shadow {
+  box-shadow: 0 $size-4 $size-6 0 var(--swatch-dark), 0 $size-6 $size-10 0 var(--swatch-dark);
+}
+
+%global-box-glow {
+  box-shadow: 0 0 $size-2 var(--swatch1);
+}
+
 // Current Page background color:
 .current {
   @extend %global-border-radius;

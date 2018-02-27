@@ -41,28 +41,26 @@ $page-width: 100% !default;
 
 
 
-// --=-=-=-=-=-=-=-=-=- Swatch Palette:
-
-// Used for decorations, Not used enough to be CSS variable
-// ----------  Sass Palette:
-$swatch-black: rgba(5, 7, 11, 1); // Not used
-$swatch-white: rgba(225, 229, 236, 1); // Not used
-$swatch-red: rgba(199, 71, 52, 1);  // Not used
-$swatch-orange: rgba(255, 176, 71, 1); // Used on hamburger's hover
-
-
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Swatch Palette: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // ---------------------------- CSS VARIABLES: ---------------------------------
-
 :root {
+
+// Decorations ----------
+--swatch-black: rgba(11, 12, 12, 1); // Not used
+--swatch-dark: rgba(14, 17, 26, .4); // Used on Box Shadow
+--swatch-white: rgba(225, 229, 236, 1); // Not used
+--swatch-red: rgba(199, 71, 52, 1);  // Not used
+--swatch-orange: rgba(255, 176, 71, 1); // Used on hamburger's hover
+
 
 // ----------  GREY THEME:
 
+// --swatch-accent: rgb(179, 186, 190);
 // --swatch1: rgba(244, 243, 243, 1);
 // --swatch2: rgba(179, 179, 179, 1);
 // --swatch3: rgba(128, 128, 128, 1);
 // --swatch4: rgba(77, 77, 77, 1);
 // --swatch5:rgba(31, 32, 36, 1);
-// --swatch-accent: rgba(236, 239, 241, 1);
 
 
 // ----------   NIGHT THEME:
@@ -104,8 +102,5 @@ $swatch-orange: rgba(255, 176, 71, 1); // Used on hamburger's hover
 --swatch-button1: var(--swatch4); // Background color
 // Misc;
 --swatch-icon: var(--swatch-accent); // Icon fill color
---glow: 0 0 $size-4 var(--swatch1); // Used on global button
-
-
 }
 // -------------------------- END of CSS VARIABLES: ------------------------------
