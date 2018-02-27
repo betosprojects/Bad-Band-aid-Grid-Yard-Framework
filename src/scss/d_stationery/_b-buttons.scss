@@ -16,6 +16,6 @@
 // Global Button:
 .button-global {
   @extend %button-init;
-  background-color: var(--button1-color);
-  color: var(--text-color);
+  background-color: var(--swatch-button1);
+  color: var(--swatch-text);
 }

@@ -1,0 +1,10 @@
+// Drawer toggle on yard page:
+.js-drawer {
+  height: 0;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.js-toggle-drawer {
+  height: 50vh;
+}

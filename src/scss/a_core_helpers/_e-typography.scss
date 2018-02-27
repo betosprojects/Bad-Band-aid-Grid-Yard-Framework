@@ -3,7 +3,7 @@
 h1,
 h2,
 h3 {
-  color: var(--h-color);
+  color: var(--swatch-h);
   font-weight: 700;
 }
 
@@ -19,12 +19,12 @@ h3 {
 // Might move these to helpers.scss? :
 .titles {
   @extend %global-padding;
-  color: var(--titles-color);
+  color: var(--swatch-titles);
   text-align: center;
  }
 
 .p-block {
-  // display: block;
   @extend %global-padding;
-  text-align: justify;
+  color: var(--swatch-p);
+  // text-align: justify;
  }

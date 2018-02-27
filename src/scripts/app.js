@@ -1,16 +1,22 @@
 // DOM Content Loader:
 document.addEventListener('DOMContentLoaded', function() {
-  // ------------------ Nav Menu Toggle:
+
+  // ------------------------ Nav Menu Toggle:
+  const sectionContainer = document.querySelector('.nav-section');
   const clickItem = document.querySelector('.hamburger-icon');
-  const targetSection = document.querySelector('.nav-section');
 
   clickItem.addEventListener('click', function() {
-    targetSection.classList.toggle('js-toggle-menu');
+    sectionContainer.classList.toggle('js-toggle-menu');
   });
 
-  // ---------------------------- Footer Year:
-  let serveDate = new Date();
 
+
+
+  // ---------------------------- Footer Year:
+  var serveDate = new Date();
   document.querySelector('#footYear').innerHTML = serveDate.getFullYear();
+
+
+
 });
 // END of DOM Content Loader

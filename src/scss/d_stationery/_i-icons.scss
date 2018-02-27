@@ -1,12 +1,94 @@
 // Icons/SVG and other graphics related images ------
+// TODO: Need an extender for  margin: $size-16 auto; and cursor pointer ?
+// Image Filters:
+%image-filter {
+  filter: grayscale(1);
 
-.icon-center {
-  height: $size-50;
+  &:hover {
+    filter: none;
+  }
+}
+
+// Global Icon:
+%icon-init {
+  display: block;
+  height: $size-60;
+  width: $size-60;
+
+  path {
+    fill: var(--swatch-icon);
+  }
+
+  // &:hover {
+  //   path {
+  //   fill: $swatch-orange;
+  //   stroke:black;
+  //   stroke-width:1;
+  //   stroke-linejoin:round;
+  //   stroke-linecap:round;
+  // }
+  // }
+}
+
+// Center icons
+.center-icon {
+  @extend %icon-init;
   margin: $size-16 auto;
 }
 
-// For image galleries/cards image thumb-nails:
+// Icon for the drawer on the yard page's (ghost-icon):
+// This button one is seperated due to a hover, merge if all
+// icons are buttons, links and same size
+.drawer-icon {
+  cursor: pointer;
+  height: $size-50;
+  width: $size-50;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+
+    // path {
+    //   fill: $swatch-orange;
+    // }
+  }
+}
+
+// -------- Header Logo and Hamburger, not related to card icons above -----------
+
+// Logo
+.logo-icon {
+  margin: $size-16 auto;
+
+  &:hover {
+    transform: scale(1.1, 1);
+  }
+}
+
+// Toggle menu icon
+.hamburger-icon {
+  cursor: pointer;
+  height: $size-40;
+  left: 0;
+  position: fixed;
+  top: $size-10;
+  width: $size-40;
+  z-index: 3;
+
+  path {
+    fill: var(--swatch-icon);
+  }
+
+  &:hover {
+    path {
+      fill: $swatch-orange;
+    }
+  }
+}
+
+// Size and styles For image thumb-nails (card images or slideshows etc..):
 .image-thumb {
-  // margin: auto;
+  @extend %image-filter;
+  margin: auto;
+  //img already set to 100% but svgs might need a different width setting:
   width: 100%;
 }

@@ -4,8 +4,8 @@
 %grid-init {
   display: grid;
   grid-gap: $size-2;
-  grid-template-columns: repeat(1, 1fr);
   margin: auto;
+  max-width: $page-width;
 }
 
 // ---- All Template areas Header|Nav|Hero|Sidebars|Main|Footer: ---------------
@@ -16,16 +16,14 @@
   'headerTem'
   'navTem'
   'heroTem'
-  'sidebar1Tem'
   'mainTem'
+  'sidebar1Tem'
   'sidebar2Tem'
   'footerTem';
   // Safe to comment out template rows if all are set to auto:
   grid-template-rows: repeat(5, auto);
   // For specific sizes:
   // grid-template-rows: auto auto auto auto auto;
-
-  max-width: $max-width;
 }
 
 // ----------- Basic Template areas Header|Nav|Hero|Main|Footer: ---------------
@@ -43,8 +41,6 @@
   grid-template-rows: repeat(5, auto);
   // For specific sizes:
   // grid-template-rows: auto auto auto auto auto;
-
-  max-width: $max-width;
 }
 
 // ------------ Minimum Template areas Header|Nav|Main|Footer: -----------------
@@ -61,14 +57,11 @@
   grid-template-rows: repeat(4, auto);
   // For specific sizes:
   // grid-template-rows: auto auto auto auto;
-
-  max-width: $max-width;
 }
 
 // ------------ Single Template areas |Main|Footer: -----------------
-// Notice: max-width $full-width (100%)
 // Example: Used in landing.html.
-.template-single {
+.template-open {
   @extend %grid-init;
   grid-template-areas:
   'openTem'
@@ -78,6 +71,4 @@
   grid-template-rows: repeat(3, auto);
   // For specific sizes:
   // grid-template-rows: auto auto auto;
-
-  max-width: $full-width;
 }

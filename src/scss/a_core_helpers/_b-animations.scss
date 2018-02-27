@@ -21,3 +21,32 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+// ------------------- anim-creepin -------------------------
+.anim-creepin {
+  animation-duration: 3s;
+  animation-name: creepin;
+}
+
+@keyframes creepin {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+// ------------------- anim-smoothin -------------------------
+.anim-smoothin {
+  animation-duration: 6s;
+  animation-name: smoothin;
+}
+
+@keyframes smoothin {
+  from{ opacity: 0; }
+  to{ opacity: 6; }
+}

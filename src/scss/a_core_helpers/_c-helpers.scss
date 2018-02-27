@@ -5,17 +5,15 @@
 // @extend %global-padding;
 
 %global-padding {
-  padding: $size-12;
+  padding: $size-16;
 }
 
 %global-border-radius {
   border-radius: $size-6;
 }
 
-// Highlighters:
-mark,
-code,
+// Current Page background color:
 .current {
   @extend %global-border-radius;
-  background-color: var(--button1-color);
+  background-color: var(--swatch-button1);
   }

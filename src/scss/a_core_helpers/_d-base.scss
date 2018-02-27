@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  background-color: var(--swatch4);
-  color: var(--text-color);
+  background-color: var(--swatch-body);
+  color: var(--swatch-text);
   font-family: var(--default-font-stack);
   font-size: 100%;
   line-height: 1.5;
@@ -16,7 +16,7 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
-  // margin: 0;
+  margin: 0;
   // padding: 0;
 }
 
@@ -28,6 +28,7 @@ ul {
 
 img {
   //Might make an extend for display block
+  border: 0;
   display: block;
   max-width: 100%;
 }

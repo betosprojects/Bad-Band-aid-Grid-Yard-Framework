@@ -1,16 +1,5 @@
 // Header Section:
 .header-section {
-  background-color: var(--swatch5);
+  background-color: var(--swatch-headers);
   grid-area: headerTem;
-}
-
-.logo-icon,
-.hamburger-icon {
-  cursor: pointer;
-  margin: $size-16 auto;
-
-  &:hover {
-    @extend %transition-fade;
-    transform: scale(1.2, 1);
-  }
 }

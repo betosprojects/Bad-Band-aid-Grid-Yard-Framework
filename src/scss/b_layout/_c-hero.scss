@@ -1,6 +1,7 @@
-// Hero Section, It could also be used for sliders, ads etc..
+// Hero Section -- sliders, ads etc..
+
 .hero-section {
-  // background-color: var(--swatch4);
+  background-color: var(--swatch-headers);
   grid-area: heroTem;
 }
 
@@ -11,12 +12,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // opacity: .7;
 }
 
 // Main Hero image:
 .hero-image {
   @extend %hero-image-init;
   background-image: url('../images/hero.jpg');
-  height: 45vh;
+  height: 50vh;
 }

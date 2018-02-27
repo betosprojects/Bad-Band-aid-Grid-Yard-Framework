@@ -1,5 +1,4 @@
 // ---------------------------- Sass VARIABLES: --------------------------------
-
 // ----------------------------- @GLOBAL SIZES ---------------------------------
 //Based on HTML font percent (100% || 16px) :
 $size-1: .0625rem; // 1px
@@ -29,39 +28,35 @@ $size-400: 25rem; // 400px
 $size-500: 31.25rem; // 500px
 $size-1000: 62.5rem; // 1000px
 
-//Calc Samples:
-// calc(#{$size-100} + #{$size-18});
+//Calc Sample:
 // 960px:
 // calc(#{$size-500} + #{$size-400} + #{$size-60});
 
 
-// Max Width and Full Width see grids.scss:
-// 73.75rem is same or more or less as 1180px, 960px is 60rem, 83.375rem = 1366px
-$max-width: 83.375rem !default;
+// Size of web-page width ---------------------------------------------------
+// 73.75rem is same or more or less as 1180px, 960px = 60rem, 83.375rem = 1366px:
 
-// Templates with full screen width like a landing page (landing.html):
-$full-width: 100%;
+// $page-width: 83.375rem !default;
+$page-width: 100% !default;
+
+
+
+// --=-=-=-=-=-=-=-=-=- Swatch Palette:
+
+// Used for decorations, Not used enough to be CSS variable
+// ----------  Sass Palette:
+$swatch-black: rgba(5, 7, 11, 1); // Not used
+$swatch-white: rgba(225, 229, 236, 1); // Not used
+$swatch-red: rgba(199, 71, 52, 1);  // Not used
+$swatch-orange: rgba(255, 176, 71, 1); // Used on hamburger's hover
+
 
 // ---------------------------- CSS VARIABLES: ---------------------------------
 
 :root {
-// --=-=-=-=-=-=-=-=-=- Color Palette:
-
-
-
-// Comment-out a theme set to use the other
-
-// ----------   BLUE-GREY THEME:
-
---swatch1: rgba(236, 239, 241, 1);
---swatch2: rgba(144, 164, 174, 1);
---swatch3: rgba(96, 125, 139, 1);
---swatch4: rgba(55, 71, 79, 1);
---swatch5:rgba(38, 50, 56, 1);
---swatch-accent: rgba(186, 232, 216, 1);
 
 // ----------  GREY THEME:
-//
+
 // --swatch1: rgba(244, 243, 243, 1);
 // --swatch2: rgba(179, 179, 179, 1);
 // --swatch3: rgba(128, 128, 128, 1);
@@ -70,20 +65,47 @@ $full-width: 100%;
 // --swatch-accent: rgba(236, 239, 241, 1);
 
 
-// Typography Colors:
---text-color: var(--swatch1);
---titles-color: var(--swatch-accent);
---h-color: var(--swatch2);
---p-color: var(--swatch1);
+// ----------   NIGHT THEME:
 
+// --swatch-accent: rgba(162, 182, 133, 1);
+// --swatch1: rgba(236, 239, 241, 1);
+// --swatch2: rgba(144, 164, 174, 1);
+// --swatch3: rgba(36, 35, 65, 1);
+// --swatch4: rgba(22, 27, 42, 1);
+// --swatch5: rgba(14, 17, 26, 1);
+
+
+// ----------   BLUE-GREY THEME:
+
+--swatch-accent: rgba(162, 182, 133, 1);
+--swatch1: rgba(236, 239, 241, 1);
+--swatch2: rgba(154, 176, 186, 1);
+--swatch3: rgb(77, 110, 126);
+--swatch4: rgba(55, 71, 79, 1);
+--swatch5:rgba(38, 50, 56, 1);
+
+
+// Main Containers:
+--swatch-body: var(--swatch4);
+--swatch-headers: var(--swatch5); // Header, Hero and Footer background color
+--swatch-containers: var(--swatch5); // Containers (cards etc) background color
+--swatch-nav: var(--swatch3); // Navbar and Sidebars background color
+
+// Typography:
+--swatch-text: var(--swatch1); // Global Text
+--swatch-titles: var(--swatch2); // Cards etc
+--swatch-h: var(--swatch-accent); // h1-h6
+--swatch-p: var(--swatch2); // Paragraph blocks
 // Font Stacks:
 --default-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
 
 // Buttons:
---button1-color: var(--swatch4);
-
+--swatch-button1: var(--swatch4); // Background color
 // Misc;
---glow: 0 0 $size-4 var(--swatch1);
+--swatch-icon: var(--swatch-accent); // Icon fill color
+--glow: 0 0 $size-4 var(--swatch1); // Used on global button
+
+
 }
 // -------------------------- END of CSS VARIABLES: ------------------------------

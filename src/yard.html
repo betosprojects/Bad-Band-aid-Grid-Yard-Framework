@@ -27,14 +27,18 @@
 <img src="images/logo.svg" class="logo-icon" alt="Logo Icon">
 </a>
 <a href="index.html">
-<h1 class="h1-header">Bone Yard</h1>
+<h1 class="h1-header">Thee Sandbox Yard</h1>
 </a>
-<img src="images/icons/hamburger-icon.svg" class="hamburger-icon" alt="Menu Icon">
+
+<svg class="hamburger-icon" width="35" height="35" viewbox="0 0 35 35" version="1.1" alt="Hamburger Button Icon">
+<path d="m3.2603 0c-1.8062 0-3.2603 1.9047-3.2603 4.2707v5.0426h35v-5.0415c0-2.3683-1.453-4.2718-3.26-4.2718zm0.00203 11.696c-1.8062 0-3.2623 1.199-3.2623 2.684v6.3507c0 1.4857 1.4551 2.6811 3.2624 2.6811h28.475c1.8062 0 3.2624-1.1953 3.2624-2.6811v-6.3507c0-1.4857-1.4551-2.6833-3.2624-2.6833h-28.475zm-3.2623 13.99v5.0426c0 2.366 1.4531 4.271 3.2603 4.271h28.48c1.806 0 3.26-1.905 3.26-4.272v-5.0426z"/>
+</svg>
+
+<svg class="drawer-icon center-icon anim-smoothin" width="50" height="50" alt="Ghost Icon"><path d="M25.02.002C6.199.002 5.916 16.857 5.916 16.857v2.408L.913 24.323c-1.032 1.044-1.217 2.979-.41 4.34l.767 1.296c.805 1.36 2.284 1.618 3.318.574l1.328-1.347V50h2.706l4.302-8.729 4.306 8.73h3.267l4.306-8.73 4.306 8.73h3.265l4.307-8.73 4.306 8.73h2.973V29.062l1.454 1.47c1.032 1.044 2.51.786 3.316-.574l.768-1.294c.806-1.363.623-3.3-.41-4.342l-5.128-5.186v-1.784S43.842 0 25.02 0zM18.678 12.48c2.528 0 4.581 2.229 4.581 4.98 0 2.752-2.05 4.984-4.581 4.984s-4.584-2.233-4.582-4.985c0-2.75 2.052-4.98 4.582-4.979zm12.632 0c2.528 0 4.58 2.229 4.581 4.98 0 2.752-2.05 4.984-4.581 4.984s-4.585-2.233-4.584-4.985c0-2.75 2.052-4.98 4.584-4.979zm-6.311 14.63a2.915 3.968 0 0 1 2.916 3.968A2.915 3.968 0 0 1 25 35.051a2.915 3.968 0 0 1-2.914-3.97A2.915 3.968 0 0 1 25 27.11z" fill="#90a4ae"/></svg>
 </header>
-<!--End header-section -->
 
 <!--Start @nav-section-->
-<nav class="nav-section js-toggle-menu">
+<nav class="nav-section">
 <ul class="ul-nav">
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
@@ -43,18 +47,18 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-<!--End nav-section -->
 
 <!--Start @hero-section-->
-<div class="hero-section">Hero/Slide-Show/Ads</div>
-<!--End hero-section-->
+<div class="hero-section js-drawer">
+<picture>
+<img src="images/bandaid-pinup.png" width="432" height="470" style="margin:auto;" alt="Cartoon Girl Image">
+</picture>
+</div>
 
 <!--Start @content-section-->
 <main class="main-section">
 
-
-<h2 class="titles">Thee Sandbox Page</h2>
-<h3 class="titles">CSS Grid Mansonry Style Auto-Fill Cards/Gallery</h3>
+<h3 class="titles">Auto-Fill Gallery</h3>
 
 <!-- Start @container-masonry/cards/gallery section -->
 <section class="container-masonry">
@@ -62,7 +66,7 @@
 <div class="container-cell">
 <h3 class="titles">TITLE ONE</h3>
 <img class="image-thumb" src="images/placeholder1.svg">
-<p class="p-block">Set the the image thumbnails to a specific size at the icons.scss file.</p>
+<p class="p-block">Set the the image thumb-nails to a specific size at the icons.scss file.</p>
 </div>
 
 <div class="container-cell">
@@ -71,42 +75,27 @@
 <p class="p-block">These containers (container-mansonry and container-cell) are at the containers.scss.</p>
 </div>
 
-<div class="container-cell">
-<h3 class="titles">TITLE THREE</h3>
-<img class="image-thumb" src="images/placeholder1.svg">
-<p class="p-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tenetur, possimus incidunt error!</p>
-</div>
-
-<div class="container-cell">
-<h3 class="titles">TITLE FOUR</h3>
-<img class="image-thumb" src="images/placeholder1.svg">
-<p class="p-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ad et ullam iusto.</p>
-</div>
-
 <!-- No Paragraph -->
 <div class="container-cell">
-<img class="image-thumb" src="images/placeholder2.svg">
+<img class="image-thumb" src="images/placeholder1.svg">
+<h3 class="titles">TITLE THREE</h3>
+<p class="p-block">Drawer toggle styles are at the components.scss.</p>
+
+</div>
+
+<div class="container-cell">
+<img class="image-thumb" src="images/placeholder1.svg">
+<h3 class="titles">TITLE FOUR</h3>
+</div>
+
+<div class="container-cell">
+<img class="image-thumb" src="images/placeholder1.svg">
 <h3 class="titles">TITLE FIVE</h3>
-</div>
-
-<div class="container-cell">
-<img class="image-thumb" src="images/placeholder2.svg">
-<h3 class="titles">TITLE SIX</h3>
-</div>
-
-<div class="container-cell">
-<img class="image-thumb" src="images/placeholder2.svg">
-<h3 class="titles">TITLE SEVEN</h3>
-</div>
-
-<div class="container-cell">
-<img class="image-thumb" src="images/placeholder2.svg">
-<h3 class="titles">TITLE EIGHT</h3>
 </div>
 
 <!-- Only images: -->
 <div class="container-cell">
-<img class="image-thumb" src="images/placeholder2.svg">
+<img class="image-thumb" src="images/placeholder1.svg">
 </div>
 
 <div class="container-cell">
@@ -114,7 +103,11 @@
 </div>
 
 <div class="container-cell">
-<img class="image-thumb" src="images/placeholder2.svg">
+<img class="image-thumb" src="images/placeholder1.svg">
+</div>
+
+<div class="container-cell">
+<img class="image-thumb" src="images/placeholder1.svg">
 </div>
 
 <div class="container-cell">
@@ -126,6 +119,7 @@
 
 </main>
 <!--End @content-section-->
+
 
 <!--Start @footer-section-->
 <footer class="footer-section">
@@ -139,6 +133,8 @@ Bad Bandaid & Graphics by Beto G. | 2017 - <span id="footYear"></span>
 <!--End Grid template Container-->
 
 <script src="scripts/app.js"></script>
+<script src="scripts/drawer.js"></script>
+
 </body>
 
 </html>

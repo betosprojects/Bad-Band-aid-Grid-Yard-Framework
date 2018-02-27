@@ -6,28 +6,32 @@
   grid-gap: $size-20;
 }
 
-// See the index, landing and about. It auto flows to 3 boxes per row,-
-// Check out the media queries to change the columns other than 3 or just auto-fill
+// See the index, landing and about. Fixed 3 Columns for desktops only,-
+// Check out the media queries to change the columns other than 3
 .container-display {
   @extend %container-init;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 // Masonry style layouts container (see yard page):
 // Just like container-display but it auto-fills
+// So it doesn't need media queries for now
+// auto-fill | auto-fit or fixed size
 .container-masonry {
   @extend %container-init;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-// Grid container cells, without medida query. Used in read more panels:
+// Grid container cell/ child container:
 .container-cell {
   @extend %global-border-radius;
-  background-color: var(--swatch5);
+  background-color: var(--swatch-containers);
   color: var(--p-color);
 }
 
 // Generic container without grid enabled:
 .container-generic {
-  background-color: var(--swatch5);
-  margin: $size-30;
+  background-color: var(--swatch-containers);
+  margin: 0 auto;
+  max-width: 90%;
 }
