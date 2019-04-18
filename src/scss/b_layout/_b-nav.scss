@@ -4,6 +4,8 @@
 .nav-section {
   @extend %global-box-shadow;
   background-color: var(--swatch-nav);
+  // Gradient version:
+  // background-image: linear-gradient(90deg, var(--swatch-nav), var(--swatch2), var(--swatch-nav));
   grid-area: navTem;
   height: 0;
   overflow: hidden;
