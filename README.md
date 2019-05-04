@@ -3,6 +3,7 @@
 This is an ongoing, responsive CSS Grid named template areas for my testing projects. The idea of the file structure was based on Hugo's [Sass boilerplate](https://github.com/HugoGiraudel/sass-boilerplate). So yeah I tweaked it a bit to my liking. But check out he's architecture, guidelines and other great info.
 
 ## What's New:
+- Changed app.js to app-index.js (Future Bundlers, scripst and other task-runners might fug me up. )
 - Sticky Navbar -
 - 100% width set to default -
 - Most SVG icons are inline, I have an icons repo but I want to make a new set -
